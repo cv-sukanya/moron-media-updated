@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import VideoProduction from "../assets/images/new-projects/alia-bhatt.jpg";
-import CreativeDirection from "../assets/images/new-projects/creative-direction-and-concept-development.jpeg";
-import PostProduction from "../assets/images/new-projects/post-production.jpg";
+import VideoProduction from "../assets/images/new-projects/alia-bhatt.webp";
+import CreativeDirection from "../assets/images/new-projects/creative-direction-and-concept-development.webp";
+import PostProduction from "../assets/images/new-projects/post-production.webp";
 
 const serviceData = [
   {

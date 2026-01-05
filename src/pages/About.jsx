@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import diluminati from "../assets/images/new-projects/about-us/dilu-minati.jpg";
-import lakme from "../assets/images/new-projects/lakme-fashion-week.png";
-import g20 from "../assets/images/new-projects/about-us/g20-summit-2025.jpg";
-import lolla from "../assets/images/new-projects/about-us/lollapalooza.jpeg";
-import musicVideos from "../assets/images/new-projects/about-us/phirse-mil.jpeg";
-import bonkers from "../assets/images/new-projects/about-us/bonkers.jpeg";
+import diluminati from "../assets/images/new-projects/about-us/dilu-minati.webp";
+import lakme from "../assets/images/new-projects/lakme-fashion-week.webp";
+import g20 from "../assets/images/new-projects/about-us/g20-summit-2025.webp";
+import lolla from "../assets/images/new-projects/about-us/lollapalooza.webp";
+import musicVideos from "../assets/images/new-projects/about-us/phirse-mil.webp";
+import bonkers from "../assets/images/new-projects/about-us/bonkers.webp";
 
 function About() {
   const [currentIndex, setCurrentIndex] = useState(0);

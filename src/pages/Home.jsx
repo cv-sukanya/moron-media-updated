@@ -1,6 +1,6 @@
 import React from "react";
-import "slick-carousel/slick/slick-theme.css";
-import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick.css";
 import LogoMarquee from "../components/LogoMarquee";
 import LogoMarquee2 from "../components/LogoMarquee2";
 import WorkSlider from "../components/WorkSlider";

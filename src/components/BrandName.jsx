@@ -25,9 +25,6 @@ const BrandName = () => {
       }
     );
 
-
-
-
     letters.forEach((letter, i) => {
       const tl = gsap.timeline({ delay: i * 0.2 });
 

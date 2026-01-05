@@ -1,15 +1,15 @@
 import React from "react";
-import BookMyShow from "../assets/images/logos/BookMyShow.svg";
-import Brut from "../assets/images/logos/Brut.svg";
+import BookMyShow from "../assets/images/logos/BookMyShow.webp";
+import Brut from "../assets/images/logos/Brut.webp";
 import ComicCon from "../assets/images/logos/ComicCon.webp";
 import Gigabyte from "../assets/images/logos/Gigabyte.webp";
 import Meta from "../assets/images/logos/Meta.webp";
 import Saregama from "../assets/images/logos/Saregama.webp";
 import Upthrust from "../assets/images/logos/Upthrust.webp";
 import RedBull from "../assets/images/logos/RedBull.webp";
-import Google from "../assets/images/logos/Google.png";
-import Kingfisher from "../assets/images/logos/Kingfisher_beer_logo.png";
-import Heineken from "../assets/images/logos/HeinekenLogo.png";
+import Google from "../assets/images/logos/Google.webp";
+import Kingfisher from "../assets/images/logos/Kingfisher_beer_logo.webp";
+import Heineken from "../assets/images/logos/HeinekenLogo.webp";
 
 const logos = [
   BookMyShow,

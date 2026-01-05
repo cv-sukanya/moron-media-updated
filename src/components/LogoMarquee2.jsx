@@ -1,5 +1,5 @@
 import React from "react";
-import Acetech from "../assets/images/logos/Acetech.svg";
+import Acetech from "../assets/images/logos/Acetech.webp";
 import MarutiSuzuki from "../assets/images/logos/MarutiSuzuki.webp";
 import Spotify from "../assets/images/logos/Spotify.webp";
 import Samsung from "../assets/images/logos/Samsung.webp";
@@ -8,8 +8,8 @@ import AMD from "../assets/images/logos/AMD.webp";
 import Lakme from "../assets/images/logos/Lakme.webp";
 import Kapil from "../assets/images/logos/Kapil.webp";
 // import SortMyScene from "../assets/images/logos/SortMyScene.webp";
-import AngelOne from "../assets/images/logos/angel-one.png";
-import G20 from "../assets/images/logos/g20-tourist.png"
+import AngelOne from "../assets/images/logos/angel-one.webp";
+import G20 from "../assets/images/logos/g20-tourist.webp"
 
 const logos = [
   Acetech,

@@ -20,8 +20,8 @@ import WeWomenAsia from "./pages/WeWomenAsia.jsx";
 import Work from "./pages/Work";
 import Services from "./pages/Services";
 
-import AOS from "aos";
-import 'aos/dist/aos.css';
+// import AOS from "aos";
+// import 'aos/dist/aos.css';
 
 // Create a title updater component
 
@@ -29,16 +29,16 @@ import 'aos/dist/aos.css';
 export default function App() {
 
   // Initialize AOS on mount
-  useEffect(() => {
-    AOS.init({
-      duration: 800,     // animation duration
-      once: true,        // only animate once when in view
-      offset: 100,       // offset (in px) from the original trigger point
-    });
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 800,     // animation duration
+  //     once: true,        // only animate once when in view
+  //     offset: 100,       // offset (in px) from the original trigger point
+  //   });
 
-    // Refresh AOS on route change (optional, if using animations in routed components)
-    AOS.refresh();
-  }, []);
+  //   // Refresh AOS on route change (optional, if using animations in routed components)
+  //   AOS.refresh();
+  // }, []);
   
   return (
     <SmoothScrollProvider>

@@ -35,22 +35,32 @@ import VirajGhelani from "../assets/images/VirajGhelani.webp";
 import WorkCard from "../components/WorkCard";
 import BonkersCorner1 from "../assets/images/reel covers/BonkersCorner1.webp";
 import CarlsbergWork from "../assets/images/CarlsbergWork.webp";
-import G20 from "../assets/images/g20.jpg";
-import Alia from "../assets/images/projects/alia bhatt.jpg";
-import Lakme from "../assets/images/projects/lakme fashion week.jpg";
-import PhirseMilo from "../assets/images/phirse-milo.png";
-import AngelOne from "../assets/images/projects/angelon.jpeg";
-import Meta from "../assets/images/new-projects/meta-india.png";
-import TataMarathon from "../assets/images/projects/tatamaratho.jpeg";
-import SonuNigam from "../assets/images/new-projects/sonu-nigam-sau-saal-pehle.jpg";
-import Kingfisher from "../assets/images/kingfisher-ipl.png";
-import Heineken from "../assets/images/heineken.png";
-import BrutSauce from "../assets/images/brut-sauce.png";
-import KapilSharma from "../assets/images/new-projects/kapil-sharma.png";
-import McD from "../assets/images/new-projects/brut-mcd.png";
-import Gyansrota from "../assets/images/new-projects/gyansrota.png";
-import BharatTex from "../assets/images/bharat-textile.png";
-import Deesan from "../assets/images/new-projects/deesan-group.png";
+import G20 from "../assets/images/g20.webp";
+import Alia from "../assets/images/projects/alia bhatt.webp";
+import Lakme from "../assets/images/projects/lakme fashion week.webp";
+import PhirseMilo from "../assets/images/phirse-milo.webp";
+import AngelOne from "../assets/images/projects/angelon.webp";
+import Meta from "../assets/images/new-projects/meta-india.webp";
+import TataMarathon from "../assets/images/projects/tatamaratho.webp";
+import SonuNigam from "../assets/images/new-projects/sonu-nigam-sau-saal-pehle.webp";
+import Kingfisher from "../assets/images/kingfisher-ipl.webp";
+import Heineken from "../assets/images/heineken.webp";
+import BrutSauce from "../assets/images/brut-sauce.webp";
+import KapilSharma from "../assets/images/new-projects/kapil-sharma.webp";
+import McD from "../assets/images/new-projects/brut-mcd.webp";
+import Gyansrota from "../assets/images/new-projects/gyansrota.webp";
+import BharatTex from "../assets/images/bharat-textile.webp";
+import Deesan from "../assets/images/new-projects/deesan-group.webp";
+import Filmfare from "../assets/images/new-projects/filmfare-work.webp";
+import Rangmorla from "../assets/images/new-projects/rangmorla-work.webp";
+import SatrangiRe from "../assets/images/new-projects/satrangi-re-sonu-nigam.webp";
+import HumareRam from "../assets/images/new-projects/humare-ram-work.webp";
+import AllYouCan from "../assets/images/new-projects/all-you-can.webp";
+import Wagamama from "../assets/images/new-projects/wagamama-work.webp";
+import Tenxu from "../assets/images/new-projects/tenxu.webp";
+import RangiloRe from "../assets/images/new-projects/rangilo-re.webp";
+import Redbull from "../assets/images/new-projects/redbull-solo-legends.webp";
+
 
 
 function Work() {
@@ -80,6 +90,78 @@ function Work() {
           Our Recent Work
         </h1>
         <div className="flex flex-row justify-center flex-wrap border-b-2 border-white gap-5 sm:gap-8 lg:gap-10 px-5 lg:px-28 pb-56">
+          <WorkCard
+            name="Filmfare Awards 2025"
+            image={Filmfare}
+            onClick={() => 
+              window.open("https://www.instagram.com/reel/DPtN0OVDzvn/?igsh=MTU2dmh0bWNkb3RvZQ==", "_blank")
+            }
+          />
+
+          <WorkCard
+            name="Satrangi Re - Sonu Nigam India Tour"
+            image={SatrangiRe}
+            onClick={() => 
+              window.open("https://www.instagram.com/reel/DQ3VHAQiBSd/?igsh=dzEwZ3ByNHowNTIx", "_blank")
+            }
+          />
+
+          <WorkCard
+            name="Rang Morla"
+            image={Rangmorla}
+            onClick={() => 
+              window.open("https://www.instagram.com/reel/DQbGtXojZhq/?igsh=MTYzMXQ2MWdncTk1dQ==", "_blank")
+            }
+          />
+
+          <WorkCard
+            name="All You Can"
+            image={AllYouCan}
+            onClick={() => 
+              window.open("https://www.instagram.com/reel/DMK4Ms1C9WT/?igsh=dTRxZnhubmhjcmxk", "_blank")
+            }
+          />
+
+          <WorkCard
+            name="Wagamama"
+            image={Wagamama}
+            onClick={() => 
+              window.open("https://www.instagram.com/reel/DMhux3oSJGj/?igsh=MWEydnVrbnBlYTAxMg==", "_blank")
+            }
+          />
+
+          <WorkCard
+            name="TenXU Brand Launch"
+            image={Tenxu}
+            onClick={() => 
+              window.open("https://www.instagram.com/p/DQmPrS5DGFb/?igsh=azE2ZnU1ODR1dWxr", "_blank")
+            }
+          />
+
+          <WorkCard
+            name="Rangilo Re"
+            image={RangiloRe}
+            onClick={() => 
+              window.open("https://www.instagram.com/reel/DPHtt8EDQBY/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==", "_blank")
+            }
+          />
+
+          <WorkCard
+            name="Redbull Solo Legends"
+            image={Redbull}
+            onClick={() => 
+              window.open("https://www.instagram.com/reel/DP0saEnE0mT/?igsh=MTZmcjMzNWVzMXJhaQ==", "_blank")
+            }
+          />
+
+          <WorkCard
+            name="Humar Ram Documentary"
+            image={HumareRam}
+            onClick={() => 
+              window.open("https://www.instagram.com/reel/DMhux3oSJGj/?igsh=MWEydnVrbnBlYTAxMg==", "_blank")
+            }
+          />
+
           <WorkCard
             name="Diluminati Tour 2024"
             image={Diljit}

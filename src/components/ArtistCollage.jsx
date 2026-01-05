@@ -1,12 +1,12 @@
 import React, { useEffect, useRef } from "react";
 // import { useState } from "react";
 import gsap from "gsap";
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 
 
 // Image imports
-import Artist1 from "../assets/images/artist.png";
+import Artist1 from "../assets/images/artist.webp";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -20,7 +20,7 @@ function ArtistCollage() {
   const count4 = useRef();
 
   useEffect(() => {
-  AOS.init();
+  // AOS.init();
 
   const counts = [
     { ref: count1, end: 120, suffix: "+" },
@@ -52,8 +52,6 @@ function ArtistCollage() {
     });
   });
 }, []);
-
-
 
   return (
     <div className="flex flex-col lg:flex-row items-stretch w-full px-4 sm:px-10 gap-6 lg:gap-0">

@@ -1,7 +1,7 @@
 import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick-theme.css";
-import "slick-carousel/slick/slick.css";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 import PoojaHegde from "../assets/images/artists/PoojaHegde.webp";
 import Kareena from "../assets/images/artists/KareenaKapoorKhan.webp";
 import SonuNigam from "../assets/images/artists/SonuNigam.webp";
@@ -112,7 +112,7 @@ function ArtistSLider() {
 
   return (
     <div className="p-4 relative pb-28">
-      <Slider {...settings}>
+      <Swiper {...settings}>
         {workData.map((work, index) => (
           <div key={index} className="px-1">
             <div className="flex flex-col rounded-[0.5vw] overflow-hidden transition-transform duration-300 slick-slide-content">
@@ -132,7 +132,7 @@ function ArtistSLider() {
             </div>
           </div>
         ))}
-      </Slider>
+      </Swiper>
     </div>
   );
 }
