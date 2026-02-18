@@ -34,10 +34,13 @@ import HumareRam from  "../assets/images/humare-ram.webp";
 import AllYouCan from "../assets/images/All-you-can.webp";
 import RedLorry from "../assets/images/Red-lorry.webp";
 import WeTheWomen from "../assets/images/WeTheWomen.webp";
-import RollingLoud from "../assets/images/reel covers/FINK.webp";
+import RollingLoud from "../assets/images/new-projects/rolling-loud.webp";
 import Upthrust from "../assets/images/upthrust.webp";
 import RangiloRe from "../assets/images/RangiloRe.webp";
 import RedBull from "../assets/images/red-bull.webp";
+import SitarForMentalHealth from "../assets/images/new-projects/rishabh-sharma.webp";
+import WCG from "../assets/images/new-projects/wcg.webp";
+import Lashika from "../assets/images/new-projects/lashika-new.webp";
 // import { image } from "framer-motion/client";
 
 function WorkSlider() {
@@ -99,11 +102,11 @@ function WorkSlider() {
       title: "Mcdonalds Corporate Film",
       link: "https://www.youtube.com/watch?v=OY5vJBVxIOk",
     },
-    // {
-    //   image: Lashika,
-    //   title: "Lashika",
-    //   link: "/",
-    // },
+    {
+      image: Lashika,
+      title: "Lashika",
+      link: "https://drive.google.com/file/d/1zupff8boABBtJzIP6rqQMuVJURR41_pi/view?usp=drive_link",
+    },
 
   ];
 
@@ -121,7 +124,7 @@ function WorkSlider() {
     {
       image: Lollapalooza,
       title: "Lollapalooza",
-      link: "/",
+      link: "https://www.instagram.com/reels/DIBX04aMjO-/",
     },
     {
       image: HumareRam,
@@ -173,17 +176,17 @@ function WorkSlider() {
       title: "Rolling Loud",
       link: "https://www.instagram.com/p/DSNQdLdjBaj/?igsh=bDVibXc3bGFxcjZs",
     },
-    // {
-    //   image: SitarForMentalHealth,
-    //   title: "Sitar for Mental Health",
-    //   link: "https://www.instagram.com/moronmedialive/reel/DIeGqyfijUu/",
-    // },
+    {
+      image: SitarForMentalHealth,
+      title: "Sitar for Mental Health",
+      link: "https://www.instagram.com/moronmedialive/reel/DIeGqyfijUu/",
+    },
 
-    // {
-    //   image: WCG,
-    //   title: "WCG 2025",
-    //   link: "https://www.youtube.com/watch?v=TmtBTlk-0pg",
-    // },
+    {
+      image: WCG,
+      title: "WCG 2025",
+      link: "https://www.youtube.com/watch?v=TmtBTlk-0pg",
+    },
     {
       image: Upthrust,
       title: "Upthrust Diwali Battle",

@@ -1,44 +1,70 @@
 import React, { useState } from "react";
-import VideoProduction from "../assets/images/new-projects/alia-bhatt.webp";
-import CreativeDirection from "../assets/images/new-projects/creative-direction-and-concept-development.webp";
-import PostProduction from "../assets/images/new-projects/post-production.webp";
+import FilmDivision from "../assets/images/new-projects/alia-bhatt.webp";
+import LiveDivision from "../assets/images/new-projects/creative-direction-and-concept-development.webp";
+// import PostProduction from "../assets/images/new-projects/post-production.webp";
 
 const serviceData = [
   {
-    title: "Video Production",
-    image: VideoProduction,
+    title: "Moron Media [Film Division]",
+    image: FilmDivision,
     services: [
+      "TVCs & Commercials",
+      "DVCs & Digital Ad Films",
+      "Branded Films & Brand Storytelling",
+      "Corporate Films",
       "Music Videos",
-      "Brand Films",
-      "Fashion Films",
-      "Event Aftermovies",
-      "Celebrity Shoots",
-      "Commercials / Ad Films",
+      "Social Media Content (Campaign-based)",
+      "Post Production (Editing, Color, Sound)",
     ],
   },
   {
-    title: "Creative Direction & Concept Development",
-    image: CreativeDirection,
+    title: "Moron Media Live",
+    image: LiveDivision,
     services: [
-      "Campaign Ideation",
-      "Moodboarding & Storyboarding",
-      "Scriptwriting",
-      "Art Direction",
-      "Talent Direction",
+      "Concert Aftermovies",
+      "Festival Coverage",
+      "Live Show Highlights",
+      "Artist Performance Content",
+      "Sponsor Deliverables (Reels + Brand integrations)",
+      "Event Recaps &amp; Social-First Edits",
+      "On-ground Campaign Coverage",
+      "Live Event Content Strategy",
     ],
   },
-  {
-    title: "Post-Production & VFX",
-    image: PostProduction,
-    services: [
-      "Offline & Online Editing",
-      "Color Grading",
-      "Motion Graphics",
-      "VFX & Compositing",
-      "Sound Design",
-    ],
-  },
+  // {
+  //   title: "Post-Production & VFX",
+  //   image: PostProduction,
+  //   services: [
+  //     "Offline & Online Editing",
+  //     "Color Grading",
+  //     "Motion Graphics",
+  //     "VFX & Compositing",
+  //     "Sound Design",
+  //   ],
+  // },
 ];
+
+
+const uspData = [
+  {
+    title: "End-to-End Execution [pre-production post]",
+    
+  },
+  {
+    title: "Strong storytelling + Cinematic output",
+  },
+  {
+    title: "Live + Brand content under one roof",
+  },
+  {
+    title: "Fast turnaround for live deliverables",
+  },
+  {
+    title: "Fast turnaround for live deliverables"
+  }
+];
+
+
 
 const OurServices = () => {
   const [hoverIndex, setHoverIndex] = useState(null);
@@ -50,8 +76,8 @@ const OurServices = () => {
           Our Services
         </h1>
 
-        {/* Responsive layout: 3 cards in a row on desktop, stacked on mobile */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {/* Responsive layout: 2 cards in a row on desktop, stacked on mobile */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {serviceData.map((service, index) => (
             <div
               key={index}
@@ -99,8 +125,42 @@ const OurServices = () => {
           ))}
 
         </div>
-      </section>
+
+        {/* USP Section */}
+        <div className="mt-14 border-t border-white/10 pt-20">
+          <h3 className="text-center text-gray-400 tracking-[0.3em] text-sm mb-4 font-montserrat">
+            WHY MORON MEDIA
+          </h3>
+
+          <p className="text-center text-xl mb-12 font-helvetica">
+            Built for brands that demand impact.
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+            {uspData.map((usp, i) => (
+              <div
+                key={i}
+                className="border border-white/15 rounded-lg p-6 transition-all duration-300 hover:border-white hover:-translate-y-1"
+              >
+                <h4 className="text-md font-light font-helvetica">
+                  {usp.title}
+                </h4>
+
+                {/* <p className="text-gray-400 text-sm leading-relaxed font-helvetica">
+                  {usp.desc}
+                </p> */}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        </section>
+
     </div>
+
+
+
+
     
   );
 };

@@ -1,25 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import AMD from "../assets/images/AMD.webp";
 import Diljit from "../assets/images/Diljit.webp";
-import DiljitDoc from "../assets/images/DiljitDoc.webp";
-import Ace from "../assets/images/Ace.webp";
+// import DiljitDoc from "../assets/images/DiljitDoc.webp";
+// import Ace from "../assets/images/Ace.webp";
 import AnanyaPandey from "../assets/images/reel covers/AnanyaPandey.webp";
 import RedLorry from "../assets/images/reel covers/RedLorry.webp";
-import SaraAliKhan from "../assets/images/artistsPage/SaraAliKhan.webp";
+// import SaraAliKhan from "../assets/images/artistsPage/SaraAliKhan.webp";
 import Lollapaooza from "../assets/images/reel covers/Lollapalooza.webp";
-import FINK from "../assets/images/reel covers/FINK.webp";
-import Bhisma from "../assets/images/reel covers/Bhisma.webp";
-import BhismaPooja from "../assets/images/reel covers/BhismaPooja.webp";
-import BookmyshowLive from "../assets/images/reel covers/BookmyshowLive.webp";
+// import FINK from "../assets/images/reel covers/FINK.webp";
+// import Bhisma from "../assets/images/reel covers/Bhisma.webp";
+// import BhismaPooja from "../assets/images/reel covers/BhismaPooja.webp";
+// import BookmyshowLive from "../assets/images/reel covers/BookmyshowLive.webp";
 import ComicCon from "../assets/images/reel covers/ComicCon.webp";
-import Gigabyte from "../assets/images/reel covers/Gigabyte.webp";
-import HyTech1 from "../assets/images/reel covers/HyTech1.webp";
-import HyTech2 from "../assets/images/reel covers/HyTech2.webp";
-import IITBombay from "../assets/images/reel covers/IITBombay.webp";
-import Jasmine from "../assets/images/artistsPage/JasmineSandlas.webp";
-import HouseTour from "../assets/images/reel covers/HouseTour.webp";
-import Ladakh from "../assets/images/reel covers/Ladakh.webp";
+// import Gigabyte from "../assets/images/reel covers/Gigabyte.webp";
+// import HyTech1 from "../assets/images/reel covers/HyTech1.webp";
+// import HyTech2 from "../assets/images/reel covers/HyTech2.webp";
+// import IITBombay from "../assets/images/reel covers/IITBombay.webp";
+// import Jasmine from "../assets/images/artistsPage/JasmineSandlas.webp";
+// import HouseTour from "../assets/images/reel covers/HouseTour.webp";
+// import Ladakh from "../assets/images/reel covers/Ladakh.webp";
 import Lashika from "../assets/images/reel covers/Lashika.webp";
 // import McDBrut from "../assets/images/reel covers/McDBrut.webp";
 import Papon from "../assets/images/reel covers/Papon.webp";
@@ -57,14 +57,205 @@ import SatrangiRe from "../assets/images/new-projects/satrangi-re-sonu-nigam.web
 import HumareRam from "../assets/images/new-projects/humare-ram-work.webp";
 import AllYouCan from "../assets/images/new-projects/all-you-can.webp";
 import Wagamama from "../assets/images/new-projects/wagamama-work.webp";
-import Tenxu from "../assets/images/new-projects/tenxu.webp";
+// import Tenxu from "../assets/images/new-projects/tenxu.webp";
 import RangiloRe from "../assets/images/new-projects/rangilo-re.webp";
 import Redbull from "../assets/images/new-projects/redbull-solo-legends.webp";
+import RishabhSharma from "../assets/images/SITAR-COVER.webp";
+import RollingLoud from "../assets/images/new-projects/rolling-loud.webp";
+import WCG from "../assets/images/new-projects/wcg.webp";
 
+const projects = [
+  {
+    name: "Filmfare Awards 2025",
+    image: Filmfare,
+    category: "live",
+    link: "https://www.instagram.com/reels/DPtP0tYjI1r/",
+  },
+  {
+    name: "Satrangi Re - Sonu Nigam India Tour",
+    image: SatrangiRe,
+    category: "live",
+    link: "https://www.instagram.com/reels/DQ4wygNiEht/",
+  },
+  {
+    name: "Diluminati India Tour",
+    image: Diljit,
+    category: "live",
+    link: "https://drive.google.com/file/d/1mZYaGIr9GVCNNkX8JDS-ML9SFPfWBHXX/view?usp=drivesdk",
+  },
+  {
+    name: "Lollapalooza",
+    image: Lollapaooza,
+    category: "live",
+    link: "https://www.instagram.com/reels/DIBX04aMjO-/",
+  },
+  {
+    name: "Rang Morla",
+    image: Rangmorla,
+    category: "live",
+    link: "https://www.instagram.com/reels/DQghrNOjJ_-/",
+  },
+  {
+    name: "Humare Ram",
+    image: HumareRam,
+    category: "live",
+    link: "https://www.instagram.com/reels/DQO00dOgflh/",
+  },
+  {
+    name: "Rangilo Re",
+    image: RangiloRe,
+    category: "live",
+    link: "https://www.instagram.com/reels/DPHtt8EDQBY/",
+  },
+  {
+    name: "All You Can Street",
+    image: AllYouCan,
+    category: "live",
+    link: "https://drive.google.com/drive/folders/1SuEjjfhd6NXSqKKfQhcYwsi5moAibdpm",
+  },
+  {
+    name: "Red Lorry Film Festival",
+    image: RedLorry,
+    category: "live",
+    link: "https://www.instagram.com/reels/DIN1hjkyP5G/",
+  },
+  {
+    name: "Lakme Fashion Week",
+    image: Lakme,
+    category: "live",
+    link: "https://www.instagram.com/sanjukta_dutta_/reel/DQln4s1iZgr/?hl=en",
+  },
+  {
+    name: "We The Women",
+    image: AnanyaPandey,
+    category: "live",
+    link: "https://www.instagram.com/reels/DRzQNM-CqZe/",
+  },
+  {
+    name: "Mumbai Comic Con",
+    image: ComicCon,
+    category: "live",
+    link: "https://drive.google.com/file/d/1HgGzobQw9yRv9r6RUjkzlBHdJCFTX7xC/view",
+  },
+  {
+    name: "Rolling Loud",
+    image: RollingLoud,
+    category: "live",
+    link: "https://www.instagram.com/p/DSNQdLdjBaj/?igsh=bDVibXc3bGFxcjZs",
+  },
+  {
+    name: "Sitar for Mental Health",
+    image: RishabhSharma,
+    category: "live",
+    link: "/",
+  },
+  {
+    name: "WCG 2025",
+    image: WCG,
+    category: "live",
+    link: "/",
+  },
+  {
+      name: "Upthrust Diwali Battle",
+      image: Upthrust,
+      category: "live",
+      link: "https://www.instagram.com/reels/C2zQ3bGIi8y/",
+  },
+
+
+  // MORON MEDIA (FILM)
+
+  {
+    name: "Alia Bhatt x Fuji Film",
+    image: Alia,
+    category: "film",
+    link: "https://youtu.be/1U5KyqDfFJY?si=Vm1T_TvK7irCZcML",
+  },
+  {
+    name: "Red Bull Solo Legends Trailer",
+    image: Redbull,
+    category: "film",
+    link: "https://youtu.be/1U5KyqDfFJY?si=Vm1T_TvK7irCZcML",
+  },
+  {
+    name: "Angel One DVC Campaign",
+    image: AngelOne,
+    category: "film",
+    link: "https://www.instagram.com/p/DHX0wDgh-AP/?igsh=d2p0Nm0zYm1jNnV0",
+  },
+  {
+    image: TumHoToh,
+    name: "Tum Ho Toh Music Video",
+    link: "https://www.youtube.com/watch?v=Q4LRnTyWXRw",
+    category: "film",
+  },
+  {
+      image: PhirseMilo,
+      name: "Phir Se Milo Music Video",
+      link: "https://www.youtube.com/watch?v=UH3k66tGqSE",
+      category: "film",
+    },
+    {
+      image: Deesan,
+      name: "Deesan Group Corporate Film",
+      link: "https://www.instagram.com/tv/CY_a8UxhQth/?igsh=MXZkaHdnem1wdDdxcA%3D%3D",
+      category: "film",
+    },
+    {
+      image: Gyansrota,
+      name: "Gyanstrotra",
+      link: "https://www.youtube.com/watch?v=gh0GYDOkD1U",
+      category: "film",
+    },
+    // {
+    //   image: CelebrityHouseTour,
+    //   name: "Celebrity House Tour",
+    //   link: "/",
+    //   category: "film",
+    // },
+
+    {
+      image: SaveraMusicVideo,
+      name: "Savera Music Video",
+      category: "film",
+      link: "https://www.youtube.com/watch?v=fOJZgFkvl0s&feature=youtu.be",
+    },
+
+    {
+      image: BonkersCorner1,
+      name: "Bonkers Corner Fashion Film",
+      category: "film",
+      link: "https://www.instagram.com/p/DCCIHyjT3II/?igsh=aGdzMWx3cGcwMDJv",
+    },
+    {
+      image: BrutSauce,
+      name: "Mcdonalds Corporate Film",
+      category: "film",
+      link: "https://www.youtube.com/watch?v=OY5vJBVxIOk",
+    },
+    {
+      image: Lashika,
+      name: "Lashika",
+      category: "film",
+      link: "https://drive.google.com/file/d/1zupff8boABBtJzIP6rqQMuVJURR41_pi/view?usp=drive_link",
+    }
+  
+
+];
 
 
 function Work() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
+
+  const [activeTab, setActiveTab] = React.useState("all");
+
+  const filteredProjects =
+  activeTab === "all"
+    ? projects
+    : projects.filter((p) => p.category === activeTab);
+
+  
+
 
   return (
     <>
@@ -89,7 +280,7 @@ function Work() {
         <h1 className="font-manrope font-bold text-white text-center text-xl md:text-5xl pt-28 pb-10 px-4 sm:px-8 md:px-40">
           Our Recent Work
         </h1>
-        <div className="flex flex-row justify-center flex-wrap border-b-2 border-white gap-5 sm:gap-8 lg:gap-10 px-5 lg:px-28 pb-56">
+        {/* <div className="flex flex-row justify-center flex-wrap border-b-2 border-white gap-5 sm:gap-8 lg:gap-10 px-5 lg:px-28 pb-56">
           <WorkCard
             name="Filmfare Awards 2025"
             image={Filmfare}
@@ -496,7 +687,42 @@ function Work() {
             image={IITBombay}
             onClick={() => window.open("https://youtu.be/D0YWgzCIfPc")}
           />
+        </div> */}
+
+        <div className="flex justify-center gap-3 mb-10 px-4 sm:px-0">
+
+          {["all", "film", "live"].map((tab) => (
+            <button
+              key={tab}
+              onClick={() => setActiveTab(tab)}
+              className={`px-4 sm:px-6 py-1.5 sm:py-2 text-xs sm:text-sm rounded-full border transition-all font-helvetica ${
+                activeTab === tab
+                  ? "bg-white text-black"
+                  : "border-white text-white hover:bg-white hover:text-black"
+              }`}
+            >
+              {tab === "all" && "All Work"}
+              {tab === "film" && "Moron Media"}
+              {tab === "live" && "Moron Media Live"}
+            </button>
+          ))}
+
         </div>
+
+
+        <div className="flex flex-row justify-center flex-wrap border-b-2 border-white gap-5 sm:gap-8 lg:gap-10 px-5 lg:px-28 pb-56">
+
+          {filteredProjects.map((item, i) => (
+            <WorkCard
+              key={i}
+              name={item.name}
+              image={item.image}
+              onClick={() => window.open(item.link, "_blank")}
+            />
+          ))}
+
+        </div>
+
       </div>
     </>
   );
