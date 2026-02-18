@@ -94,7 +94,7 @@ function Work() {
             name="Filmfare Awards 2025"
             image={Filmfare}
             onClick={() => 
-              window.open("https://www.instagram.com/reel/DPtN0OVDzvn/?igsh=MTU2dmh0bWNkb3RvZQ==", "_blank")
+              window.open("https://www.instagram.com/reels/DPtP0tYjI1r/", "_blank")
             }
           />
 
@@ -102,7 +102,7 @@ function Work() {
             name="Satrangi Re - Sonu Nigam India Tour"
             image={SatrangiRe}
             onClick={() => 
-              window.open("https://www.instagram.com/reel/DQ3VHAQiBSd/?igsh=dzEwZ3ByNHowNTIx", "_blank")
+              window.open("https://www.instagram.com/reels/DQ4wygNiEht/", "_blank")
             }
           />
 
@@ -110,7 +110,7 @@ function Work() {
             name="Rang Morla"
             image={Rangmorla}
             onClick={() => 
-              window.open("https://www.instagram.com/reel/DQbGtXojZhq/?igsh=MTYzMXQ2MWdncTk1dQ==", "_blank")
+              window.open("https://www.instagram.com/reels/DQghrNOjJ_-/", "_blank")
             }
           />
 
@@ -126,7 +126,7 @@ function Work() {
             name="Wagamama"
             image={Wagamama}
             onClick={() => 
-              window.open("https://www.instagram.com/reel/DMhux3oSJGj/?igsh=MWEydnVrbnBlYTAxMg==", "_blank")
+              window.open("https://www.instagram.com/wagamama_ind?igsh=eHEyYTg2Y2VrYzQ1", "_blank")
             }
           />
 
@@ -134,7 +134,7 @@ function Work() {
             name="TenXU Brand Launch"
             image={Tenxu}
             onClick={() => 
-              window.open("https://www.instagram.com/p/DQmPrS5DGFb/?igsh=azE2ZnU1ODR1dWxr", "_blank")
+              window.open("https://www.instagram.com/p/DQmPrS5DGFb/?igsh=MWRxcTJrMmQ5MWdqbw%3D%3D", "_blank")
             }
           />
 
@@ -142,7 +142,7 @@ function Work() {
             name="Rangilo Re"
             image={RangiloRe}
             onClick={() => 
-              window.open("https://www.instagram.com/reel/DPHtt8EDQBY/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==", "_blank")
+              window.open("https://www.instagram.com/reels/DPHtt8EDQBY/", "_blank")
             }
           />
 
@@ -150,15 +150,15 @@ function Work() {
             name="Redbull Solo Legends"
             image={Redbull}
             onClick={() => 
-              window.open("https://www.instagram.com/reel/DP0saEnE0mT/?igsh=MTZmcjMzNWVzMXJhaQ==", "_blank")
+              window.open("https://www.youtube.com/watch?v=kVqFx0sMAro", "_blank")
             }
           />
 
           <WorkCard
-            name="Humar Ram Documentary"
+            name="Humare Ram Documentary"
             image={HumareRam}
             onClick={() => 
-              window.open("https://www.instagram.com/reel/DMhux3oSJGj/?igsh=MWEydnVrbnBlYTAxMg==", "_blank")
+              window.open("https://www.instagram.com/reels/DQO00dOgflh/", "_blank")
             }
           />
 
@@ -176,12 +176,14 @@ function Work() {
           <WorkCard
             name="FINK | India Tour: BookMyShow Live"
             image={FINK}
-            onClick={() => navigate("/work/fink")}
+            onClick={() => window.open("https://www.instagram.com/p/DKJ7h1lsDBp/?igsh=amRsNzR0c2lzOGh4", "_blank")}
           />
           <WorkCard
             name="Red Lorry Film Festival"
             image={RedLorry}
-            onClick={() => navigate("/work/red-lorry-film-festival")}
+            onClick={() => 
+              window.open("https://www.instagram.com/reels/DIN1hjkyP5G/", "_blank")
+            }
           />
           <WorkCard
             name="Lollapalooza India"
@@ -191,54 +193,64 @@ function Work() {
           <WorkCard
             name="Bonkers Corner"
             image={BonkersCorner1}
-            onClick={() => navigate("/work/bonkers-corner")}
+            onClick={() => 
+              window.open("https://www.instagram.com/p/DCCIHyjT3II/?igsh=aGdzMWx3cGcwMDJv", "_blank")
+            }
           />
           <WorkCard
             name="Tum Ho To: Music Video"
             image={TumHoToh}
             onClick={() =>
-              window.open("https://youtu.be/Q4LRnTyWXRw", "_blank")
+              window.open("https://www.youtube.com/watch?v=Q4LRnTyWXRw", "_blank")
             }
           />
           <WorkCard
             name="Ace Tech Delhi"
             image={Ace}
-            onClick={() => navigate("/work/ace-tech")}
+            onClick={() =>
+              window.open("https://www.youtube.com/watch?v=Ux2fNFdv5fI", "_blank")
+            }
           />
           <WorkCard
             name="G20 Summit 2023"
             image={G20}
-            onClick={() => navigate("/")}
+            onClick={() => 
+              window.open("https://drive.google.com/file/d/1j6R9aijpeiHSLGNZhnXqN9kLJGiJ-WSn/view", "_blank")
+            }
           />
           <WorkCard
             name="Alia x Fujifilm"
             image={Alia}
-            onClick={() => navigate("/")}
+            onClick={() => 
+              window.open("http://youtube.com/watch?feature=shared&v=1U5KyqDfFJY", "_blank")
+            }
           />
           <WorkCard
             name="Jasmine Sandlas - Abu Dhabi"
             image={Jasmine}
             onClick={() =>
-              window.open("https://www.instagram.com/reel/DENHzCUyjZr", "_blank")
+              window.open("https://www.instagram.com/reels/DENHzCUyjZr/", "_blank")
             }
           />
           <WorkCard
             name="Carlsberg Brand Work at Generation Speed 2025"
             image={CarlsbergWork}
             onClick={() => 
-              window.open("https://drive.google.com/file/d/1tYZBzrtBPNMXJIrDk42LGY47gOythpPU/view?usp=drive_link", "_blank")
+              window.open("https://www.instagram.com/p/DGnsiDkP5JQ/?igsh=ZGliY3c3dXQ1MGFj", "_blank")
             }
           />
           <WorkCard
             name="We the Women Asia"
             image={AnanyaPandey}
-            onClick={() => navigate("/work/we-the-women-asia")}
+            onClick={() => 
+              window.open("https://www.instagram.com/reels/DRzQNM-CqZe/", "_blank")
+            }
           />
           <WorkCard
             name="McDonalds X Brut India"
             image={McD}
             onClick={() =>
-              window.open("https://youtu.be/OY5vJBVxIOk", "_blank")
+              window.open("https://www.youtube.com/watch?v=OY5vJBVxIOk", "_blank")
             }
           />
           <WorkCard
@@ -255,7 +267,7 @@ function Work() {
             name="Savera Music Video"
             image={SaveraMusicVideo}
             onClick={() =>
-              window.open(" https://youtu.be/fOJZgFkvl0s", "_blank")
+              window.open("https://www.youtube.com/watch?v=fOJZgFkvl0s&feature=youtu.be", "_blank")
             }
           />
           <WorkCard
@@ -276,21 +288,21 @@ function Work() {
             name="Lakme Fashion"
             image={Lakme}
             onClick={() =>
-              window.open("https://www.youtube.com/watch?si=Q5HYD_Rl9qzeplWn&v=GjS7ucwqoxg&feature=youtu.be")
+              window.open("https://www.instagram.com/sanjukta_dutta_/reel/DQln4s1iZgr/?hl=en", "_blank")
             }
           />
           <WorkCard
             name="Phirse Milo"
             image={PhirseMilo}
             onClick={() =>
-              window.open("https://www.youtube.com/watch?si=xIOJFolygmmoxlcp&v=UH3k66tGqSE&feature=youtu.be")
+              window.open("https://www.youtube.com/watch?v=UH3k66tGqSE", "_blank")
             }
           />
           <WorkCard
             name="Angel One"
             image={AngelOne}
             onClick={() =>
-              window.open("https://www.instagram.com/p/DHX0wDgh-AP/?utm_source=ig_web_copy_link&igsh=MTJ2cmJkeWdmMHJidA==")
+              window.open("https://www.instagram.com/p/DHX0wDgh-AP/?igsh=d2p0Nm0zYm1jNnV0", "_blank")
             }
           />
           <WorkCard
@@ -319,7 +331,7 @@ function Work() {
             name="Heineken"
             image={Heineken}
             onClick={() =>
-              window.open("https://drive.google.com/file/d/1oHATd99CK8PNSuTl3Mq4Ekq4NZQM8AP2/view?usp=drivesdk")
+              window.open("https://drive.google.com/file/d/1oHATd99CK8PNSuTl3Mq4Ekq4NZQM8AP2/view", "_blank")
             }
           />
 
@@ -327,7 +339,7 @@ function Work() {
             name="Brut Sauce"
             image={BrutSauce}
             onClick={() =>
-              window.open("/")
+              window.open("https://www.youtube.com/watch?v=Kw6iNpNnx7U", "_blank")
             }
           />
           <WorkCard
@@ -342,21 +354,21 @@ function Work() {
             name="Gyansrota"
             image={Gyansrota}
             onClick={() =>
-              window.open("youtu.be/gh0GYDOkD1U?si=KCSMTaOZZKWg7NCr")
+              window.open("https://www.youtube.com/watch?v=gh0GYDOkD1U", "_blank")
             }
           />
           <WorkCard
             name="Bharat Textile Heritage Film"
             image={BharatTex}
             onClick={() =>
-              window.open("https://drive.google.com/file/d/1MXN3VyymFEu3TyO38UOjnRdFMMsHzJZW/view?usp=drivesdk")
+              window.open("https://drive.google.com/file/d/1MXN3VyymFEu3TyO38UOjnRdFMMsHzJZW/view", "_blank")
             }
           />
           <WorkCard
             name="Deesan Group - Corporate Film"
             image={Deesan}
             onClick={() =>
-              window.open("https://www.instagram.com/p/CY_a8UxhQth/")
+              window.open("https://www.instagram.com/tv/CY_a8UxhQth/?igsh=MXZkaHdnem1wdDdxcA%3D%3D", "_blank")
             }
           />
 
@@ -385,7 +397,7 @@ function Work() {
             name="Upthrust Esport's LAN Event"
             image={Upthrust}
             onClick={() =>
-              window.open(" https://www.instagram.com/reel/C2zQ3bGIi8y")
+              window.open("https://www.instagram.com/reels/C2zQ3bGIi8y/", "_blank")
             }
           />
           <WorkCard
@@ -441,7 +453,7 @@ function Work() {
             name="Samsung"
             image={Samsung}
             onClick={() =>
-              window.open("https://www.instagram.com/reel/C_dTxOhs-7k")
+              window.open("https://www.instagram.com/reels/DMfmphuo9cT/")
             }
           />
           <WorkCard
@@ -469,14 +481,14 @@ function Work() {
             name="Comic Con: Mumbai"
             image={ComicCon}
             onClick={() =>
-              window.open("https://drive.google.com/file/d/1HgGzobQw9yRv9r6RUjkzlBHdJCFTX7xC/view?usp=drivesdk")
+              window.open("https://drive.google.com/file/d/1HgGzobQw9yRv9r6RUjkzlBHdJCFTX7xC/view", "_blank")
             }
           />
           <WorkCard
             name="Tiago EV X Tata Marathon"
             image={TiagoEV}
             onClick={() =>
-              window.open("https://www.instagram.com/reel/CtHMTqTAJU9")
+              window.open("https://www.instagram.com/reels/CtHMTqTAJU9/", "_blank")
             }
           />
           <WorkCard

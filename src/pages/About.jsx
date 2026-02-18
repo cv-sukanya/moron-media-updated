@@ -1,22 +1,54 @@
 import React, { useState } from "react";
 import diluminati from "../assets/images/new-projects/about-us/dilu-minati.webp";
 import lakme from "../assets/images/new-projects/lakme-fashion-week.webp";
-import g20 from "../assets/images/new-projects/about-us/g20-summit-2025.webp";
+// import g20 from "../assets/images/new-projects/about-us/g20-summit-2025.webp";
 import lolla from "../assets/images/new-projects/about-us/lollapalooza.webp";
-import musicVideos from "../assets/images/new-projects/about-us/phirse-mil.webp";
-import bonkers from "../assets/images/new-projects/about-us/bonkers.webp";
+// import musicVideos from "../assets/images/new-projects/about-us/phirse-mil.webp";
+// import bonkers from "../assets/images/new-projects/about-us/bonkers.webp";
+import AliaBhatt from "../assets/images/new-projects/alia-bhatt.webp";
+import AngelOne from "../assets/images/angelone.webp";
+import RedBull from "../assets/images/redbull.webp";
+import TumHoToh from "../assets/images/tum-ho-toh.webp";
+import Savera from "../assets/images/savera-about.webp";
+import FilmFare from "../assets/images/filmfare.webp";
+import ComicCon from "../assets/images/comic-con.webp";
 
 function About() {
+  // const [currentIndex, setCurrentIndex] = useState(0);
+
+  // const projects = [
+  //   { image: diluminati, title: "Diluminati Tour 2024", desc: "India's biggest concert tour, where we helmed all creative for billboards and digital, in partnership with Saregama India." },
+  //   { image: lakme, title: "Lakmé Fashion Week", desc: "Crafting sleek, high-energy visuals for India’s most prestigious runway." },
+  //   { image: g20, title: "G20 Summit x Assam Tourism", desc: "Producing visually rich campaigns spotlighting India on the global stage." },
+  //   { image: lolla, title: "Lollapalooza India", desc: "Capturing the raw, genre-defying energy of one of the world’s most iconic music festivals." },
+  //   { image: musicVideos, title: "Music Videos", desc: "Chart-topping music videos for Shaan, Iqlipse Nova, and Prakriti Kakkar – each crossing over a crore views and counting." },
+  //   { image: bonkers, title: "Bonkers Corner Films", desc: "Distinctive fashion films for Bonkers Corner, blending streetwear swagger with cinematic edge." },
+  // ];
+
+  const [activeTab, setActiveTab] = useState("media");
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const projects = [
+  const mediaProjects = [
+    { image:AliaBhatt, title: "Alia Bhatt x Fujifilm", desc: "decription" },
+    { image:AngelOne, title: "Angel One", desc: "decription" }, 
+    { image: RedBull, title: "Red Bull Solo Legends", desc: "decription" },
+    { image: TumHoToh, title: "Tum Ho Toh", desc: "decription" },
+    { image: Savera, title: "Savera", desc: "decription" },
+  ];
+  const liveProjects = [
+    { image: FilmFare, title: "Filmfare", desc: "decription" },
+    { image: lolla, title: "Lollapalooza India", desc: "Capturing the raw, genre-defying energy of one of the world’s most iconic music festivals." },
     { image: diluminati, title: "Diluminati Tour 2024", desc: "India's biggest concert tour, where we helmed all creative for billboards and digital, in partnership with Saregama India." },
     { image: lakme, title: "Lakmé Fashion Week", desc: "Crafting sleek, high-energy visuals for India’s most prestigious runway." },
-    { image: g20, title: "G20 Summit x Assam Tourism", desc: "Producing visually rich campaigns spotlighting India on the global stage." },
-    { image: lolla, title: "Lollapalooza India", desc: "Capturing the raw, genre-defying energy of one of the world’s most iconic music festivals." },
-    { image: musicVideos, title: "Music Videos", desc: "Chart-topping music videos for Shaan, Iqlipse Nova, and Prakriti Kakkar – each crossing over a crore views and counting." },
-    { image: bonkers, title: "Bonkers Corner Films", desc: "Distinctive fashion films for Bonkers Corner, blending streetwear swagger with cinematic edge." },
+    // { image: RollingLoud, title: "Rolling Loud", desc: "description" },
+    { image: ComicCon, title: "Comic Con", desc: "description" },
   ];
+  const projects = activeTab === "media" ? mediaProjects : liveProjects;
+
+  const switchTab = (tab) => {
+    setActiveTab(tab);
+    setCurrentIndex(0);
+  };
 
   const handlePrev = () => {
     setCurrentIndex((prev) => (prev === 0 ? projects.length - 1 : prev - 1));
@@ -39,23 +71,40 @@ function About() {
     <div className="bg-black text-white px-6 sm:px-14 pt-14 pb-32 border-b-2 border-white w-full">
 
 
-      <h1 className="font-montserrat font-bold text-3xl md:text-5xl mb-10 mt-20">
+      <h1 className="font-montserrat font-bold text-3xl md:text-5xl mb-5 mt-20">
         About Moron Media
       </h1>
 
-      <div className="space-y-6 text-sm sm:text-base lg:text-xl leading-relaxed sm:leading-loose font-helvetica text-justify">
-        <p>Welcome to Moron Media – where imagination meets execution at the highest level. We’re a leading creative agency 
-            redefining the landscape of video production, campaign conceptualization, and post-production with work that’s 
-            as bold as it is unforgettable.
+      <div className="space-y-3 text-sm sm:text-base lg:text-xl leading-relaxed 
+                      sm:leading-loose font-helvetica text-justify 
+                      [&_p]:font-[200]
+                      [&_p]:text-gray-400
+                      [&_h1]:font-bold 
+                      [&_h2]:font-medium
+                      [&_h2]: tracking-wide
+                      [&_h2]: mb-2"
+      >
+        <p>Moron Media is a full-service creative production agency. We create high-quality visual
+            content for brands, artists, and experiences — from commercials and branded films to
+            large-scale Live Division.
         </p>
-        <p>From stadium-filling concerts and global fashion spectacles to cinematic music videos and culture-shaping brand 
-            campaigns, our portfolio spans the pulse of pop culture. Whether it’s capturing the electricity of live events 
-            or crafting nuanced storytelling for high fashion and global tourism, we bring visions to life with precision 
-            and flair.
+        <br />
+        
+        <h1>Over time, our work has grown into two focused verticals:
+        </h1>
+        <h2>Moron Media (Film Division)</h2>
+        <p>
+            This is our core division where we produce TVCs, DVCs, branded films, corporate films, and
+            music videos. We handle everything end-to-end — concept, scripting, shoot production, and
+            post-production.
         </p>
-        <p>Our collaborators include global giants like META, Redbull, Samsung, Maruti Suzuki, AMD, Gigabyte, 
-            and Saregama India, as well as trailblazing Indian brands like Bonkers Corner, Upthrust Esports, 
-            and Brut India.
+        <br />
+        <h2>Moron Media Live (Live Division)</h2>
+        <p>
+            Moron Media Live is our Live Division vertical focused on concerts, festivals, award shows,
+            and on-ground experiences. We create high-energy live content designed for digital
+            platforms — including aftermovies, show highlights, sponsor deliverables, and social-first
+            reels.
         </p>
       </div>
 
@@ -63,6 +112,33 @@ function About() {
       <h2 className="font-montserrat font-bold text-xl md:text-4xl mb-10 mt-20">
         Our Standout Projects
       </h2>
+
+      <div className="flex justify-center gap-4 mb-12">
+
+        <button
+          onClick={() => switchTab("media")}
+          className={`px-6 py-2 border transition ${
+            activeTab === "media"
+              ? "bg-white text-black"
+              : "border-white text-white"
+          }`}
+        >
+          Moron Media Standout Projects
+        </button>
+
+        <button
+          onClick={() => switchTab("live")}
+          className={`px-6 py-2 border transition ${
+            activeTab === "live"
+              ? "bg-white text-black"
+              : "border-white text-white"
+          }`}
+        >
+          Moron Media Live Standout Projects
+        </button>
+
+      </div>
+
 
       <div className="relative w-full flex items-center justify-center">
         <button

@@ -9,7 +9,7 @@ html, body {
   overflow-x: hidden;
 }
 
-.swiper-slide {
+/* .swiper-slide {
   opacity: 0.35;
   transform: scale(0.82);
   transition: all 0.45s ease-in-out;
@@ -18,8 +18,24 @@ html, body {
 .swiper-slide-active {
   opacity: 1;
   transform: scale(1);
+} */
+
+.swiper-slide .slick-slide-content {
+  transform: scale(0.7);
+  opacity: 0.35;
+  transition: all 0.45s ease;
 }
 
+.swiper-slide-active .slick-slide-content {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.swiper-slide-prev .slick-slide-content,
+.swiper-slide-next .slick-slide-content {
+  transform: scale(0.85);
+  opacity: 0.5;
+}
 @media (max-width: 480px) {
   .swiper-slide {
     width: 100% !important;
@@ -33,6 +49,7 @@ html, body {
     border-radius: 10px;
   }
 }
+
 
 
 @keyframes fade-up {
