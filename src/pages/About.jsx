@@ -12,6 +12,7 @@ import TumHoToh from "../assets/images/tum-ho-toh.webp";
 import Savera from "../assets/images/savera-about.webp";
 import FilmFare from "../assets/images/filmfare.webp";
 import ComicCon from "../assets/images/comic-con.webp";
+import RollingLoud from "../assets/images/rolling-loud.webp"
 
 function About() {
   // const [currentIndex, setCurrentIndex] = useState(0);
@@ -29,19 +30,19 @@ function About() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const mediaProjects = [
-    { image:AliaBhatt, title: "Alia Bhatt x Fujifilm", desc: "decription" },
-    { image:AngelOne, title: "Angel One", desc: "decription" }, 
-    { image: RedBull, title: "Red Bull Solo Legends", desc: "decription" },
-    { image: TumHoToh, title: "Tum Ho Toh", desc: "decription" },
-    { image: Savera, title: "Savera", desc: "decription" },
+    { image:AliaBhatt, title: "Alia Bhatt x Fujifilm", desc: "Crafting compelling visual narratives around one of India’s most celebrated icons blending authenticity with cinematic finesse" },
+    { image:AngelOne, title: "Angel One", desc: "Driving high-impact financial storytelling through sharp, strategy-led brand films and digital campaigns." }, 
+    { image: RedBull, title: "Red Bull Solo Legends", desc: "Fueling adrenaline-packed e-sports event that captures grit, speed, and the spirit of performance." },
+    { image: TumHoToh, title: "Tum Ho Toh", desc: "A visually rich musical journey brought alive through emotion-driven storytelling and immersive frames." },
+    { image: Savera, title: "Savera", desc: "Translating melody into mood, a soulful visual experience rooted in aesthetics and atmosphere." },
   ];
   const liveProjects = [
-    { image: FilmFare, title: "Filmfare", desc: "decription" },
+    { image: FilmFare, title: "Filmfare Awards 2025", desc: "Documenting the glamour, scale, and spectacle of India’s most iconic night in entertainment." },
     { image: lolla, title: "Lollapalooza India", desc: "Capturing the raw, genre-defying energy of one of the world’s most iconic music festivals." },
-    { image: diluminati, title: "Diluminati Tour 2024", desc: "India's biggest concert tour, where we helmed all creative for billboards and digital, in partnership with Saregama India." },
-    { image: lakme, title: "Lakmé Fashion Week", desc: "Crafting sleek, high-energy visuals for India’s most prestigious runway." },
-    // { image: RollingLoud, title: "Rolling Loud", desc: "description" },
-    { image: ComicCon, title: "Comic Con", desc: "description" },
+    { image: diluminati, title: "Diluminati India Tour", desc: "Bringing stadium-scale euphoria to screen with dynamic, high-octane concert storytelling." },
+    { image: lakme, title: "Lakmé Fashion Week", desc: "Framing fashion’s biggest runway moments with elegance, precision, and visual drama." },
+    { image: RollingLoud, title: "Rolling Loud", desc: "Immersing audiences in bass-heavy culture, crowd frenzy, and global hip-hop energy." },
+    { image: ComicCon, title: "Comic Con", desc: "Celebrating pop culture fandom through vibrant, high-energy coverage that matches the madness." },
   ];
   const projects = activeTab === "media" ? mediaProjects : liveProjects;
 
