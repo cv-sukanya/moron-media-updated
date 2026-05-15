@@ -126,7 +126,7 @@ function Footer() {
             href="mailto:contact@moronmedia.in"
             className="p-2 hover:text-[#d93d11] text-center transition-all duration-300"
           >
-            <h3 className="text-xl md:text-xl font-medium hover:font-bold">Contact</h3>
+            <h3 className="text-xl md:text-xl font-medium hover:font-bold">Mail</h3>
             {/* <p className="text-sm md:text-base mt-2 text-zinc-400">[Email]</p> */}
           </a>
         </div>
