@@ -26,8 +26,11 @@ function About() {
   //   { image: bonkers, title: "Bonkers Corner Films", desc: "Distinctive fashion films for Bonkers Corner, blending streetwear swagger with cinematic edge." },
   // ];
 
-  const [activeTab, setActiveTab] = useState("media");
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // const [activeTab, setActiveTab] = useState("media");
+  // const [currentIndex, setCurrentIndex] = useState(0);
+
+  const [activeTab] = useState("film");
+  const [currentIndex] = useState(0);
 
   const mediaProjects = [
     { image:AliaBhatt, title: "Alia Bhatt x Fujifilm", desc: "Crafting compelling visual narratives around one of India’s most celebrated icons blending authenticity with cinematic finesse" },
@@ -59,12 +62,12 @@ function About() {
   //   setCurrentIndex((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
   // };
 
-  const getVisibleProjects = () => {
-    const lastIndex = projects.length - 1;
-    const prevIndex = currentIndex === 0 ? lastIndex : currentIndex - 1;
-    const nextIndex = currentIndex === lastIndex ? 0 : currentIndex + 1;
-    return [projects[prevIndex], projects[currentIndex], projects[nextIndex]];
-  };
+  // const getVisibleProjects = () => {
+  //   const lastIndex = projects.length - 1;
+  //   const prevIndex = currentIndex === 0 ? lastIndex : currentIndex - 1;
+  //   const nextIndex = currentIndex === lastIndex ? 0 : currentIndex + 1;
+  //   return [projects[prevIndex], projects[currentIndex], projects[nextIndex]];
+  // };
 
   // const visibleProjects = getVisibleProjects();
 
