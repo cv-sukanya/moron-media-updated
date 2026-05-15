@@ -1,6 +1,6 @@
 import React from "react";
-import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import { IoMailOutline } from "react-icons/io5";
+// import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
+// import { IoMailOutline } from "react-icons/io5";
 
 function Footer() {
   return (

@@ -46,18 +46,18 @@ function About() {
   ];
   const projects = activeTab === "media" ? mediaProjects : liveProjects;
 
-  const switchTab = (tab) => {
-    setActiveTab(tab);
-    setCurrentIndex(0);
-  };
+  // const switchTab = (tab) => {
+  //   setActiveTab(tab);
+  //   setCurrentIndex(0);
+  // };
 
-  const handlePrev = () => {
-    setCurrentIndex((prev) => (prev === 0 ? projects.length - 1 : prev - 1));
-  };
+  // const handlePrev = () => {
+  //   setCurrentIndex((prev) => (prev === 0 ? projects.length - 1 : prev - 1));
+  // };
 
-  const handleNext = () => {
-    setCurrentIndex((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
-  };
+  // const handleNext = () => {
+  //   setCurrentIndex((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
+  // };
 
   const getVisibleProjects = () => {
     const lastIndex = projects.length - 1;
@@ -66,7 +66,7 @@ function About() {
     return [projects[prevIndex], projects[currentIndex], projects[nextIndex]];
   };
 
-  const visibleProjects = getVisibleProjects();
+  // const visibleProjects = getVisibleProjects();
 
   return (
     <div className="bg-black text-white px-6 sm:px-14 pt-14 pb-32 border-b-2 border-white w-full">
