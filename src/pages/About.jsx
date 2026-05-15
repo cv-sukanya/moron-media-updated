@@ -86,7 +86,7 @@ function About() {
                       [&_h2]: mb-2"
       >
         <p>Moron Media is a full-service creative production agency. We create high-quality visual
-            content for brands, artists, and experiences — from commercials and branded films to
+            content for brands, artists, and experiences from commercials and branded films to
             large-scale Live Division.
         </p>
         <br />
@@ -95,26 +95,22 @@ function About() {
         </h1>
         <h2>Moron Media (Film Division)</h2>
         <p>
-            This is our core division where we produce TVCs, DVCs, branded films, corporate films, and
-            music videos. We handle everything end-to-end — concept, scripting, shoot production, and
-            post-production.
+            Moron Media is a creative production house with a strong focus on brand films, corporate films, campaign videos, CGI-led content, and digital advertising. We have worked with brands like Puma for the official jersey launch of Delhi Capitals; Skybags (creating AI ads for their bags Zynex and Activ); Bonkers Corner (video production for 8+ campaigns); Kognivera Polo Cup (official cup anthem); and music videos with singer Shaan, Iqlipse Nova, and Prakriti Kakkar. We’ve also developed IPs for Brut India and India Today.
         </p>
         <br />
         <h2>Moron Media Live (Live Division)</h2>
         <p>
-            Moron Media Live is our Live Division vertical focused on concerts, festivals, award shows,
-            and on-ground experiences. We create high-energy live content designed for digital
-            platforms — including aftermovies, show highlights, sponsor deliverables, and social-first
-            reels.
+            At Moron Media, a large part of our work involves capturing and creating content for live entertainment formats where scale, speed, and storytelling come together. We’ve delivered projects across properties such as Red Bull, BookMyShow  Lollapalooza India, Sa Re Ga Ma India, District  Rolling Loud India, Assam G20, Times Group  Filmfare 2025, Satrangi Re India Tour by Sonu Nigam, The Mix by Mumbai Indians, Letters To Lata Didi by Shreya Ghoshal, My Story India Tour by Honey Singh, Humare Ram Theatrical Drama for Felicity Theatre and many more.
+
         </p>
       </div>
 
 
       <h2 className="font-montserrat font-bold text-xl md:text-4xl mb-10 mt-20">
-        Our Standout Projects
+        Flagship Projects
       </h2>
 
-      <div className="flex justify-center gap-4 mb-12">
+      {/* <div className="flex justify-center gap-4 mb-12">
 
         <button
           onClick={() => switchTab("media")}
@@ -138,10 +134,10 @@ function About() {
           Moron Media Live Standout Projects
         </button>
 
-      </div>
+      </div> */}
 
 
-      <div className="relative w-full flex items-center justify-center">
+      {/* <div className="relative w-full flex items-center justify-center">
         <button
           onClick={handlePrev}
           className="absolute left-0 sm:-left-10 z-10 p-2 rounded-full bg-white/20 hover:bg-white/30 transition"
@@ -190,11 +186,11 @@ function About() {
         >
           ❯
         </button>
-      </div>
+      </div> */}
             
-      <div className="mt-20 text-sm sm:text-base lg:text-xl leading-relaxed sm:leading-loose font-helvetica text-justify">
+      <div className="mt-1 text-sm sm:text-base lg:text-xl leading-relaxed sm:leading-loose font-helvetica text-justify">
         <p>
-          At Moron Media, we don’t just produce content—we build moments,
+          At Moron Media, we don’t just produce content we build moments,
           memories, and movements. Whether it’s a 30-second reel or a nationwide
           campaign, we move fast, think big, and create loud.
         </p>

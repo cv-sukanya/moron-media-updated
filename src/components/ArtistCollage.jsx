@@ -23,9 +23,9 @@ function ArtistCollage() {
   // AOS.init();
 
   const counts = [
-    { ref: count1, end: 120, suffix: "+" },
+    { ref: count1, end: 500, suffix: "+" },
     { ref: count2, end: 100, suffix: "+" },
-    { ref: count3, end: 30, suffix: "+" },
+    { ref: count3, end: 50, suffix: "+" },
     { ref: count4, end: 200, suffix: "M+" }
   ];
 

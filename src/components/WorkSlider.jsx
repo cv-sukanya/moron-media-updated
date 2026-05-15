@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-
+import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -30,7 +30,7 @@ import Satrangi from "../assets/images/new-projects/satrangi-re.webp";
 import Rangmorla from "../assets/images/new-projects/rangmorla-aditya-gadhvi.webp";
 import Gyansrota from "../assets/images/new-projects/gyansrota.webp";
 import Savera from "../assets/images/savera.webp";
-import HumareRam from  "../assets/images/humare-ram.webp";
+import HumareRam from "../assets/images/humare-ram.webp";
 import AllYouCan from "../assets/images/All-you-can.webp";
 import RedLorry from "../assets/images/Red-lorry.webp";
 import WeTheWomen from "../assets/images/WeTheWomen.webp";
@@ -48,11 +48,13 @@ function WorkSlider() {
   const swiperRef = useRef(null);
 
   const moronMedia = [
-    { image: AliaBhatt,
+    {
+      image: AliaBhatt,
       title: "Alia Bhatt x Fujifilm",
       link: "https://youtu.be/1U5KyqDfFJY?si=Vm1T_TvK7irCZcML",
     },
-    { image: RedBull,
+    {
+      image: RedBull,
       title: "Red Bull Solo Legends Trailer",
       link: "https://youtu.be/1U5KyqDfFJY?si=Vm1T_TvK7irCZcML",
     },
@@ -107,14 +109,13 @@ function WorkSlider() {
       title: "Lashika",
       link: "https://drive.google.com/file/d/1zupff8boABBtJzIP6rqQMuVJURR41_pi/view?usp=drive_link",
     },
-
   ];
 
   const moronMediaLive = [
     {
-      image:  Filmfare,
+      image: Filmfare,
       title: "Filmfare Awards 2025",
-      link: "https://www.instagram.com/reels/DPtP0tYjI1r/"
+      link: "https://www.instagram.com/reels/DPtP0tYjI1r/",
     },
     {
       image: Diljit,
@@ -134,27 +135,27 @@ function WorkSlider() {
     {
       image: Rangmorla,
       title: "Rang Morla",
-      link: "https://www.instagram.com/reels/DQghrNOjJ_-/"
+      link: "https://www.instagram.com/reels/DQghrNOjJ_-/",
     },
     {
       image: RangiloRe,
       title: "Rangilo Re",
-      link: "https://www.instagram.com/reels/DPHtt8EDQBY/"
+      link: "https://www.instagram.com/reels/DPHtt8EDQBY/",
     },
     {
       image: Satrangi,
       title: "Satrangi Re - Sonu Nigam India Tour",
-      link: "https://www.instagram.com/reels/DQ4wygNiEht/"
+      link: "https://www.instagram.com/reels/DQ4wygNiEht/",
     },
     {
       image: AllYouCan,
       title: "All You Can Street",
-      link: "https://drive.google.com/drive/folders/1SuEjjfhd6NXSqKKfQhcYwsi5moAibdpm"
+      link: "https://drive.google.com/drive/folders/1SuEjjfhd6NXSqKKfQhcYwsi5moAibdpm",
     },
     {
       image: RedLorry,
       title: "Red Lorry Film Festival",
-      link: "https://www.instagram.com/reels/DIN1hjkyP5G/"
+      link: "https://www.instagram.com/reels/DIN1hjkyP5G/",
     },
     {
       image: LakmeFashion,
@@ -191,12 +192,10 @@ function WorkSlider() {
       image: Upthrust,
       title: "Upthrust Diwali Battle",
       link: "https://www.instagram.com/reels/C2zQ3bGIi8y/",
-    }
-
+    },
   ];
 
-  const currentData =
-    activeTab === "media" ? moronMedia : moronMediaLive;
+  const currentData = activeTab === "media" ? moronMedia : moronMediaLive;
 
   useEffect(() => {
     if (swiperRef.current) {
@@ -204,7 +203,6 @@ function WorkSlider() {
       swiperRef.current.slideToLoop(0, 0);
     }
   }, [activeTab]);
-
 
   // const workData = [
   //   {
@@ -303,7 +301,7 @@ function WorkSlider() {
   //     title: "Deesan Group Corporate Film",
   //     link: "https://www.instagram.com/tv/CY_a8UxhQth/?igsh=MXZkaHdnem1wdDdxcA%3D%3D",
   //   },
-    
+
   //   // {
   //   //   image: KareenaKapoor,
   //   //   title: "Celebrity Interviews",
@@ -326,31 +324,44 @@ function WorkSlider() {
   //   },
   // ];
 
+  const navigate = useNavigate();
+
   return (
     <div className="p-8 relative pb-24">
       <div className="flex justify-center mb-8">
         <div className="flex border border-white rounded-full overflow-hidden">
+          <div className="flex border border-white rounded-full overflow-hidden">
+            <button
+              onClick={() => setActiveTab("media")}
+              className={`px-8 py-2 text-sm tracking-wide transition-all
+      ${
+        activeTab === "media"
+          ? "bg-white text-black"
+          : "text-white border-r border-white/30"
+      }`}
+            >
+              Moron Media
+            </button>
 
-          <button
-            onClick={() => setActiveTab("media")}
-            className={`px-8 py-2 text-sm tracking-wide transition-all
-              ${activeTab === "media"
-                ? "bg-white text-black"
-                : "text-white"}`}
-          >
-            Moron Media
-          </button>
+            <button
+              onClick={() => setActiveTab("live")}
+              className={`px-8 py-2 text-sm tracking-wide transition-all
+      ${
+        activeTab === "live"
+          ? "bg-white text-black"
+          : "text-white border-r border-white/30"
+      }`}
+            >
+              Moron Media Live
+            </button>
 
-          <button
-            onClick={() => setActiveTab("live")}
-            className={`px-8 py-2 text-sm tracking-wide transition-all
-              ${activeTab === "live"
-                ? "bg-white text-black"
-                : "text-white"}`}
-          >
-            Moron Media Live
-          </button>
-
+            <button
+              onClick={() => navigate("/work")}
+              className="px-8 py-2 text-sm tracking-wide transition-all text-white"
+            >
+              Work
+            </button>
+          </div>
         </div>
       </div>
 
@@ -372,14 +383,13 @@ function WorkSlider() {
           1024: { slidesPerView: 5 },
           768: { slidesPerView: 2 },
           480: { slidesPerView: 1 },
-          0:   { slidesPerView: 1 } 
+          0: { slidesPerView: 1 },
         }}
       >
         {currentData.map((work, index) => (
           <SwiperSlide key={index}>
             <a href={work.link} target="_blank" rel="noopener noreferrer">
               <div className="flex flex-col rounded-[0.5vw] overflow-hidden transition-transform duration-300 slick-slide-content">
-
                 <img
                   src={work.image}
                   alt={work.title}
@@ -407,6 +417,5 @@ function WorkSlider() {
     </div>
   );
 }
-
 
 export default WorkSlider;

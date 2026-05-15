@@ -27,7 +27,7 @@ function Home() {
           <h1 className="font-montserrat font-bold text-center text-white text-xl md:text-4xl pb-5 px-4 sm:px-8 md:px-14"
               data-aos="fade-up"
               data-aos-delay="200">
-            Our Biggest Projects
+            {/* Our Biggest Projects */}
           </h1>
           <WorkSlider />
         </div>

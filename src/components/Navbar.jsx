@@ -152,11 +152,11 @@ function Navbar() {
 
 
         {/* Schedule a Call button */}
-        <div className="hidden lg:block">
+        {/* <div className="hidden lg:block">
           <NavLink to="https://docs.google.com/forms/d/e/1FAIpQLSfhTBetZWrA6G-97ihqoc_XsgdGwr2gHHmZwg9feB0CSySRCA/viewform?usp=sharing&ouid=102780773921089345298" className="px-4 py-2 border-2 border-white rounded-full hover:bg-white hover:text-black transition-all">
             Schedule a Call
           </NavLink>
-        </div>
+        </div> */}
 
         {/* Mobile Menu Toggle */}
         <div className="lg:hidden">

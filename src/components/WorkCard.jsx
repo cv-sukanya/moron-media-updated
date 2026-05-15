@@ -1,22 +1,64 @@
-import React from "react";
+import React, { useState } from "react";
 
-function WorkCard({ name, image, onClick }) {
+function WorkCard({ name, image, link, links, onClick }) {
+  const [hover, setHover] = useState(false);
+
+  const hasMultipleLinks = links?.length > 0;
+
   return (
     <div
-      onClick={onClick}
-      className="w-full sm:w-[40%] lg:w-[28%] flex flex-col items-left gap-3 cursor-pointer"
+      className="relative overflow-hidden rounded-lg group cursor-pointer 
+                w-full sm:w-[45%] lg:w-[30%] flex flex-col items-left gap-3 cursor-pointer"
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+      onClick={!hasMultipleLinks ? onClick : undefined}
     >
-      
-      <div
-        className="w-full aspect-square rounded-[1vw] flex items-end justify-center overflow-hidden 
-        bg-white/10 backdrop-blur-md 
-        transition-all duration-500"
-      >
-        <img src={image} className="w-full h-full object-cover transition-all duration-500" alt={name} />
+      {/* Image */}
+      {/* <img
+        src={image}
+        alt={name}
+        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+      /> */}
+
+      <div className="w-full h-[450px] overflow-hidden rounded-lg">
+        <img
+          src={image}
+          alt={name}
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
       </div>
-      <h1 className="text-white font-helvetica font-semibold text-lg sm:text-xl lg:text-xl text-center">
-        {name}
-      </h1>
+
+      {/* Title default */}
+      <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent p-4">
+        <h3 className="text-white text-lg font-medium">{name}</h3>
+      </div>
+
+      {/* Multi-link hover overlay */}
+      {hasMultipleLinks && (
+        <div
+          className={`absolute inset-0 bg-black/85 flex flex-col justify-center items-center px-5 transition-all duration-300 ${
+            hover ? "opacity-100" : "opacity-0 pointer-events-none"
+          }`}
+        >
+          {/* <h3 className="text-white text-xl font-semibold mb-5 text-center">
+            {name}
+          </h3> */}
+
+          <div className="flex flex-col gap-3 w-full">
+            {links.map((item, index) => (
+              <a
+                key={index}
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border border-white text-white px-4 py-2 rounded-full text-center hover:bg-white hover:text-black transition-all"
+              >
+                {item.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }

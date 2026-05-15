@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import FilmDivision from "../assets/images/moron-media-film-division.png";
-import LiveDivision from "../assets/images/moron-media-live-division.png";
+import FilmDivision from "../assets/images/new-projects/alia-bhatt.webp";
+import LiveDivision from "../assets/images/new-projects/creative-direction-and-concept-development.webp";
 // import PostProduction from "../assets/images/new-projects/post-production.webp";
 
 const serviceData = [
@@ -13,8 +13,8 @@ const serviceData = [
       "Branded Films & Brand Storytelling",
       "Corporate Films",
       "Music Videos",
-      "Social Media Content",
-      "End-to-End Post Production",
+      "Social Media Content (Campaign-based)",
+      "Post Production (Editing, Color, Sound)",
     ],
   },
   {
@@ -27,6 +27,7 @@ const serviceData = [
       "Artist Performance Content",
       "Sponsor Deliverables (Reels + Brand integrations)",
       "Event Recaps &amp; Social-First Edits",
+      "On-ground Campaign Coverage",
       "Live Event Content Strategy",
     ],
   },
@@ -43,20 +44,27 @@ const serviceData = [
   // },
 ];
 
+
 const uspData = [
   {
-    title: "360° Video Production Management",
+    title: "End-to-End Execution [pre-production post]",
+    
   },
   {
-    title: "High-Impact Cinematic Storytelling",
+    title: "Strong storytelling + Cinematic output",
   },
   {
-    title: "One-Stop Solution for Live Entertainment & Brand Content",
+    title: "Live + Brand content under one roof",
   },
   {
-    title: "Rapid Turnaround for Live Content",
+    title: "Fast turnaround for live deliverables",
   },
+  {
+    title: "Fast turnaround for live deliverables"
+  }
 ];
+
+
 
 const OurServices = () => {
   const [hoverIndex, setHoverIndex] = useState(null);
@@ -75,47 +83,47 @@ const OurServices = () => {
               key={index}
               onMouseEnter={() => setHoverIndex(index)}
               onMouseLeave={() => setHoverIndex(null)}
-              className="relative rounded-lg text-center border-2 border-[#c4c2c2] overflow-hidden group cursor-pointer h-[450px]"
+              className="relative rounded-lg shadow-xl overflow-hidden transition-all duration-300 flex flex-col"
             >
               {/* Image */}
-              <img
-                src={service.image}
-                alt={service.title}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-
-              {/* Dark overlay */}
-              <div
-                className={`absolute inset-0 bg-black/90 transition-opacity duration-500 ${
-                  hoverIndex === index ? "opacity-200" : "opacity-0"
-                }`}
-              />
+              <div className="relative w-full h-0 pb-[56.25%] overflow-hidden">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="absolute top-0 left-0 w-full h-full object-cover transition-transform duration-500 transform hover:scale-105"
+                />
+                <div className="absolute inset-0  from-black/20 to-black/60 transition-opacity duration-300 pointer-events-none" />
+              </div>
 
               {/* Title */}
-              <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/90 to-transparent z-10">
-                <h2 className="text-xl sm:text-2xl font-semibold font-helvetica text-white">
+              <div className="flex items-center justify-between px-6 py-4 bg-black text-white">
+                <h2 className="text-lg sm:text-lg font-semibold font-helvetica">
                   {service.title}
                 </h2>
+                <span
+                  className={`text-lg transition-transform duration-300 ${
+                    hoverIndex === index ? "rotate-180" : ""
+                  }`}
+                >
+                  ▼
+                </span>
               </div>
 
-              {/* Hover List Overlay */}
-              <div
-                className={`absolute inset-0 flex items-center justify-center z-20 px-8 transition-all duration-500 ${
-                  hoverIndex === index
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-6 pointer-events-none"
+              {/* Dropdown list (hover only one at a time) */}
+              <ul
+                className={`bg-black text-white px-6 py-4 font-helvetica overflow-hidden transition-all duration-500 text-base font-[Helvetica] space-y-2 ${
+                  hoverIndex === index ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
                 }`}
               >
-                <ul className="text-white text-center font-helvetica space-y-3">
-                  {service.services.map((item, i) => (
-                    <li key={i} className="text-base md:text-lg tracking-wide">
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+                {service.services.map((item, i) => (
+                  <li key={i} className="transition-colors font-helvetica">
+                    • {item}
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
+
         </div>
 
         {/* USP Section */}
@@ -128,13 +136,13 @@ const OurServices = () => {
             Built for brands that demand impact.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {uspData.map((usp, i) => (
               <div
                 key={i}
                 className="border border-white/15 rounded-lg p-6 transition-all duration-300 hover:border-white hover:-translate-y-1"
               >
-                <h4 className="text-md text-center font-light font-helvetica">
+                <h4 className="text-md font-light font-helvetica">
                   {usp.title}
                 </h4>
 
@@ -145,8 +153,15 @@ const OurServices = () => {
             ))}
           </div>
         </div>
-      </section>
+
+        </section>
+
     </div>
+
+
+
+
+    
   );
 };
 
