@@ -432,8 +432,8 @@ function Work() {
               }`}
             >
               {/* {tab === "all" && "All Work"} */}
-              {tab === "film" && "Moron Media Film Division"}
-              {tab === "live" && "Moron Media Live Division"}
+              {tab === "film" && "Film Division"}
+              {tab === "live" && "Live Division"}
             </button>
           ))}
         </div>
