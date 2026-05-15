@@ -1,18 +1,18 @@
-import React, { useState } from "react";
-import diluminati from "../assets/images/new-projects/about-us/dilu-minati.webp";
-import lakme from "../assets/images/new-projects/lakme-fashion-week.webp";
-// import g20 from "../assets/images/new-projects/about-us/g20-summit-2025.webp";
-import lolla from "../assets/images/new-projects/about-us/lollapalooza.webp";
-// import musicVideos from "../assets/images/new-projects/about-us/phirse-mil.webp";
-// import bonkers from "../assets/images/new-projects/about-us/bonkers.webp";
-import AliaBhatt from "../assets/images/new-projects/alia-bhatt.webp";
-import AngelOne from "../assets/images/angelone.webp";
-import RedBull from "../assets/images/redbull.webp";
-import TumHoToh from "../assets/images/tum-ho-toh.webp";
-import Savera from "../assets/images/savera-about.webp";
-import FilmFare from "../assets/images/filmfare.webp";
-import ComicCon from "../assets/images/comic-con.webp";
-import RollingLoud from "../assets/images/rolling-loud.webp"
+import React from "react";
+// import diluminati from "../assets/images/new-projects/about-us/dilu-minati.webp";
+// import lakme from "../assets/images/new-projects/lakme-fashion-week.webp";
+// // import g20 from "../assets/images/new-projects/about-us/g20-summit-2025.webp";
+// import lolla from "../assets/images/new-projects/about-us/lollapalooza.webp";
+// // import musicVideos from "../assets/images/new-projects/about-us/phirse-mil.webp";
+// // import bonkers from "../assets/images/new-projects/about-us/bonkers.webp";
+// import AliaBhatt from "../assets/images/new-projects/alia-bhatt.webp";
+// import AngelOne from "../assets/images/angelone.webp";
+// import RedBull from "../assets/images/redbull.webp";
+// import TumHoToh from "../assets/images/tum-ho-toh.webp";
+// import Savera from "../assets/images/savera-about.webp";
+// import FilmFare from "../assets/images/filmfare.webp";
+// import ComicCon from "../assets/images/comic-con.webp";
+// import RollingLoud from "../assets/images/rolling-loud.webp"
 
 function About() {
   // const [currentIndex, setCurrentIndex] = useState(0);
@@ -29,25 +29,23 @@ function About() {
   // const [activeTab, setActiveTab] = useState("media");
   // const [currentIndex, setCurrentIndex] = useState(0);
 
-  const [activeTab] = useState("film");
-  const [currentIndex] = useState(0);
 
-  const mediaProjects = [
-    { image:AliaBhatt, title: "Alia Bhatt x Fujifilm", desc: "Crafting compelling visual narratives around one of India’s most celebrated icons blending authenticity with cinematic finesse" },
-    { image:AngelOne, title: "Angel One", desc: "Driving high-impact financial storytelling through sharp, strategy-led brand films and digital campaigns." }, 
-    { image: RedBull, title: "Red Bull Solo Legends", desc: "Fueling adrenaline-packed e-sports event that captures grit, speed, and the spirit of performance." },
-    { image: TumHoToh, title: "Tum Ho Toh", desc: "A visually rich musical journey brought alive through emotion-driven storytelling and immersive frames." },
-    { image: Savera, title: "Savera", desc: "Translating melody into mood, a soulful visual experience rooted in aesthetics and atmosphere." },
-  ];
-  const liveProjects = [
-    { image: FilmFare, title: "Filmfare Awards 2025", desc: "Documenting the glamour, scale, and spectacle of India’s most iconic night in entertainment." },
-    { image: lolla, title: "Lollapalooza India", desc: "Capturing the raw, genre-defying energy of one of the world’s most iconic music festivals." },
-    { image: diluminati, title: "Diluminati India Tour", desc: "Bringing stadium-scale euphoria to screen with dynamic, high-octane concert storytelling." },
-    { image: lakme, title: "Lakmé Fashion Week", desc: "Framing fashion’s biggest runway moments with elegance, precision, and visual drama." },
-    { image: RollingLoud, title: "Rolling Loud", desc: "Immersing audiences in bass-heavy culture, crowd frenzy, and global hip-hop energy." },
-    { image: ComicCon, title: "Comic Con", desc: "Celebrating pop culture fandom through vibrant, high-energy coverage that matches the madness." },
-  ];
-  const projects = activeTab === "media" ? mediaProjects : liveProjects;
+  // const mediaProjects = [
+  //   { image:AliaBhatt, title: "Alia Bhatt x Fujifilm", desc: "Crafting compelling visual narratives around one of India’s most celebrated icons blending authenticity with cinematic finesse" },
+  //   { image:AngelOne, title: "Angel One", desc: "Driving high-impact financial storytelling through sharp, strategy-led brand films and digital campaigns." }, 
+  //   { image: RedBull, title: "Red Bull Solo Legends", desc: "Fueling adrenaline-packed e-sports event that captures grit, speed, and the spirit of performance." },
+  //   { image: TumHoToh, title: "Tum Ho Toh", desc: "A visually rich musical journey brought alive through emotion-driven storytelling and immersive frames." },
+  //   { image: Savera, title: "Savera", desc: "Translating melody into mood, a soulful visual experience rooted in aesthetics and atmosphere." },
+  // ];
+  // const liveProjects = [
+  //   { image: FilmFare, title: "Filmfare Awards 2025", desc: "Documenting the glamour, scale, and spectacle of India’s most iconic night in entertainment." },
+  //   { image: lolla, title: "Lollapalooza India", desc: "Capturing the raw, genre-defying energy of one of the world’s most iconic music festivals." },
+  //   { image: diluminati, title: "Diluminati India Tour", desc: "Bringing stadium-scale euphoria to screen with dynamic, high-octane concert storytelling." },
+  //   { image: lakme, title: "Lakmé Fashion Week", desc: "Framing fashion’s biggest runway moments with elegance, precision, and visual drama." },
+  //   { image: RollingLoud, title: "Rolling Loud", desc: "Immersing audiences in bass-heavy culture, crowd frenzy, and global hip-hop energy." },
+  //   { image: ComicCon, title: "Comic Con", desc: "Celebrating pop culture fandom through vibrant, high-energy coverage that matches the madness." },
+  // ];
+  // const projects = activeTab === "media" ? mediaProjects : liveProjects;
 
   // const switchTab = (tab) => {
   //   setActiveTab(tab);
