@@ -1,18 +1,18 @@
 import React from "react";
 // import { useNavigate } from "react-router-dom";
 // import AMD from "../assets/images/AMD.webp";
-import Diljit from "../assets/images/Diljit.webp";
+import Diljit from "../assets/images/work/diluminati-india-tour.jpg";
 // import DiljitDoc from "../assets/images/DiljitDoc.webp";
 // import Ace from "../assets/images/Ace.webp";
 import AnanyaPandey from "../assets/images/reel covers/AnanyaPandey.webp";
-import RedLorry from "../assets/images/reel covers/RedLorry.webp";
+import RedLorry from "../assets/images/work/red-lorry.jpg";
 // import SaraAliKhan from "../assets/images/artistsPage/SaraAliKhan.webp";
-import Lollapaooza from "../assets/images/reel covers/Lollapalooza.webp";
+import Lollapaooza from "../assets/images/work/lollapalooza.jpg";
 // import FINK from "../assets/images/reel covers/FINK.webp";
 // import Bhisma from "../assets/images/reel covers/Bhisma.webp";
 // import BhismaPooja from "../assets/images/reel covers/BhismaPooja.webp";
 // import BookmyshowLive from "../assets/images/reel covers/BookmyshowLive.webp";
-import ComicCon from "../assets/images/reel covers/ComicCon.webp";
+import ComicCon from "../assets/images/work/comic-con.jpg";
 // import Gigabyte from "../assets/images/reel covers/Gigabyte.webp";
 // import HyTech1 from "../assets/images/reel covers/HyTech1.webp";
 // import HyTech2 from "../assets/images/reel covers/HyTech2.webp";
@@ -20,52 +20,63 @@ import ComicCon from "../assets/images/reel covers/ComicCon.webp";
 // import Jasmine from "../assets/images/artistsPage/JasmineSandlas.webp";
 // import HouseTour from "../assets/images/reel covers/HouseTour.webp";
 // import Ladakh from "../assets/images/reel covers/Ladakh.webp";
-import Lashika from "../assets/images/reel covers/Lashika.webp";
+// import Lashika from "../assets/images/reel covers/Lashika.webp";
 // import McDBrut from "../assets/images/reel covers/McDBrut.webp";
 // import Papon from "../assets/images/reel covers/Papon.webp";
 // import Sanam from "../assets/images/reel covers/Sanam.webp";
-import SaveraMusicVideo from "../assets/images/reel covers/SaveraMusicVideo.webp";
+import SaveraMusicVideo from "../assets/images/work/savera.png";
 // import Shaan from "../assets/images/reel covers/Shaan.webp";
 // import SpotifyCreators from "../assets/images/reel covers/SpotifyCreators.webp";
 // import TiagoEV from "../assets/images/reel covers/TiagoEV.webp";
-import TumHoToh from "../assets/images/reel covers/TumHoToh.webp";
+import TumHoToh from "../assets/images/work/tum-ho-toh.jpg";
 import Upthrust from "../assets/images/reel covers/Upthrust.webp";
 // import Samsung from "../assets/images/SamsungEvent.webp";
 // import VirajGhelani from "../assets/images/VirajGhelani.webp";
 import WorkCard from "../components/WorkCard";
-import BonkersCorner1 from "../assets/images/reel covers/BonkersCorner1.webp";
+import BonkersCorner1 from "../assets/images/work/bonkers.jpg";
 // import CarlsbergWork from "../assets/images/CarlsbergWork.webp";
 // import G20 from "../assets/images/g20.webp";
-import Alia from "../assets/images/projects/alia bhatt.webp";
+import Alia from "../assets/images/work/alia-bhatt-fuji-film.png";
 import Lakme from "../assets/images/projects/lakme fashion week.webp";
-import PhirseMilo from "../assets/images/phirse-milo.webp";
-import AngelOne from "../assets/images/projects/angelon.webp";
+import PhirseMilo from "../assets/images/work/phirse-milo.jpg";
+import AngelOne from "../assets/images/work/angel-one.jpg";
 // import Meta from "../assets/images/new-projects/meta-india.webp";
 // import TataMarathon from "../assets/images/projects/tatamaratho.webp";
 // import SonuNigam from "../assets/images/new-projects/sonu-nigam-sau-saal-pehle.webp";
 // import Kingfisher from "../assets/images/kingfisher-ipl.webp";
 // import Heineken from "../assets/images/heineken.webp";
-import BrutSauce from "../assets/images/brut-sauce.webp";
+// import BrutSauce from "../assets/images/brut-sauce.webp";
 // import KapilSharma from "../assets/images/new-projects/kapil-sharma.webp";
 // import McD from "../assets/images/new-projects/brut-mcd.webp";
-import Gyansrota from "../assets/images/new-projects/gyansrota.webp";
+import Gyansrota from "../assets/images/work/gyanstrota.png";
 // import BharatTex from "../assets/images/bharat-textile.webp";
-import Deesan from "../assets/images/new-projects/deesan-group.webp";
-import Filmfare from "../assets/images/new-projects/filmfare-work.webp";
-import Rangmorla from "../assets/images/new-projects/rangmorla-work.webp";
-import SatrangiRe from "../assets/images/new-projects/satrangi-re-sonu-nigam.webp";
-import HumareRam from "../assets/images/new-projects/humare-ram-work.webp";
-import AllYouCan from "../assets/images/new-projects/all-you-can.webp";
+import Deesan from "../assets/images/work/deesan-group.png";
+import Filmfare from "../assets/images/work/filmfare.jpg";
+import Rangmorla from "../assets/images/work/rang-morla-aditya-gadhvi.jpg";
+import SatrangiRe from "../assets/images/work/satrangi-re.jpg";
+import HumareRam from "../assets/images/work/humare-ram.jpg";
+import AllYouCan from "../assets/images/work/all-you-can.jpg";
 // import Wagamama from "../assets/images/new-projects/wagamama-work.webp";
 // import Tenxu from "../assets/images/new-projects/tenxu.webp";
-import RangiloRe from "../assets/images/new-projects/rangilo-re.webp";
-import Redbull from "../assets/images/new-projects/redbull-solo-legends.webp";
-import RishabhSharma from "../assets/images/SITAR-COVER.webp";
-import RollingLoud from "../assets/images/new-projects/rolling-loud.webp";
+import RangiloRe from "../assets/images/work/rangilo-re-parthiv-gohil.jpg";
+import Redbull from "../assets/images/work/redbull-solo.jpg";
+import RishabhSharma from "../assets/images/work/sitar-for-mental-health.jpg";
+import RollingLoud from "../assets/images/work/rolling-loud.jpg";
 import WCG from "../assets/images/new-projects/wcg.webp";
-import TheMix from "../assets/images/the-mix-by-mumbai-indians.png";
-import LettersToLataDidi from "../assets/images/letters-to-lata-didi.png";
-import HoneySingh from "../assets/images/honey-singh.png";
+import TheMix from "../assets/images/work/the-mix-mi.jpg";
+import LettersToLataDidi from "../assets/images/work/letter-by-lata-di-shreya.jpg";
+import HoneySingh from "../assets/images/work/my-story-honey-singh.jpg";
+import Puma from "../assets/images/work/puma2.png";
+import Skybags from "../assets/images/work/skybags.jpg";
+import Lashika from "../assets/images/work/lashika.png";
+import Kognivera from "../assets/images/work/korgnivera.png";
+import WCGMortal from "../assets/images/work/WCG Mortal vs Scoutop.png";
+import Brut from "../assets/images/work/brut-mcd.png";
+import IndiaToday from "../assets/images/work/india-today-sky-interview.png";
+import AdobeSummit from "../assets/images/work/adobe.jpg";
+import FrenchEmbassy from "../assets/images/work/french-embassy.png";
+import PearlAcademy from "../assets/images/work/pearl-academy.png";
+import SaraAliKhan from "../assets/images/work/sara-ali-khan.png";
 
 const projects = [
   {
@@ -328,13 +339,49 @@ const projects = [
     link: "https://www.instagram.com/reels/C2zQ3bGIi8y/",
   },
 
-  // MORON MEDIA (FILM)
-
+  // MORON MEDIA (FILM Division)
+  {
+    name: "Puma x Delhi Capitals",
+    image: Puma,
+    category: "film",
+    link: "",
+    links: [
+      {
+        label: "Puma x Delhi Capitals ",
+        url: "https://drive.google.com/drive/folders/1KsHw61AQIHDBcC5ZWq_-7Dp031_5rEiN",
+      },
+      {
+        label: "Puma x Delhi Capitals ",
+        url: "https://www.instagram.com/p/DXRou4WD5Y9/",
+      },
+      {
+        label: "Puma x Delhi Capitals ",
+        url: "https://www.instagram.com/p/DW3E7F9D2_w/",
+      },
+      
+    ]
+  },
   {
     name: "Alia Bhatt x Fuji Film",
     image: Alia,
     category: "film",
     link: "https://youtu.be/1U5KyqDfFJY?si=Vm1T_TvK7irCZcML",
+  },
+  {
+    name: "Skybags",
+    image: Skybags,
+    category: "film",
+    link: "",
+    links: [
+      {
+        label: "Skybags- Zynex",
+        url: "https://www.instagram.com/p/DVTjlI8iN14/",
+      },
+      {
+        label: "Skybags- Activ",
+        url: "https://www.instagram.com/p/DVBAV8_D3H2/",
+      }
+    ]
   },
   {
     name: "Red Bull Solo Legends Trailer",
@@ -343,11 +390,111 @@ const projects = [
     link: "https://youtu.be/1U5KyqDfFJY?si=Vm1T_TvK7irCZcML",
   },
   {
+    image: BonkersCorner1,
+    name: "Bonkers Corner Fashion Film",
+    category: "film",
+    link: "",
+    links: [
+      {
+        label: "Bonkers Corner - Spongebob Collection",
+        url: "https://www.instagram.com/reels/C24fTZSpfeK/",
+      },
+      {
+        label: "Bonkers Corner - Smiley Collection",
+        url: "https://www.instagram.com/p/DCCIHyjT3II/?igsh=c2ZjMHEwZ3B3Nmg3",
+      },
+      {
+        label: "Bonkers Corner - Skyclub Collection",
+        url: "https://www.instagram.com/reels/DMh5b5IMKBg/",
+      },
+      {
+        label: "Bonkers Corner - Hello Kitty Collection",
+        url: "https://www.instagram.com/p/C97pqwwMuoN/",
+      },
+      {
+        label: "Bonkers Corner - Playboy Collection",
+        url: "https://www.instagram.com/p/C97p3pPsrbu/",
+      },
+    ]
+  },
+  {
+    name: "Lashika",
+    image: Lashika,
+    category: "film",
+    link:"",
+    links: [
+      {
+        label: "Lashika Sindoor",
+        url: "https://drive.google.com/file/d/1vQnwkbonR3-w9HBABDnJ2MJebqhyP1L7/view?usp=drive_link",
+      },
+      {
+        label: "Lashika Hair Spa",
+        url: "https://drive.google.com/file/d/16AtxbUZRyU7yYBA3oFCMp4uUkgpeQBLW/view?usp=drive_link",
+      },
+      {
+        label: "Lashika Face Cream",
+        url: "https://drive.google.com/file/d/1q1_WtVmLL53uV63K9ufoHlFOdJiJj-NN/view?usp=drive_link",
+      },
+      {
+        label: "Lashika FaceWash",
+        url: "https://drive.google.com/file/d/1ZL-36KG5fGVeKjPPIcBRU89Lqeac351s/view?usp=drive_link",
+      },
+      {
+        label: "Lashika Cleanser",
+        url: "https://drive.google.com/file/d/1zupff8boABBtJzIP6rqQMuVJURR41_pi/view?usp=drive_link",
+      },
+      {
+        label: "Lashika Serum",
+        url: "https://drive.google.com/file/d/1gqXc-o5FUAfYTAu67Bho28JKuMePLdnj/view?usp=drive_link",
+      },
+    ]
+  },
+  {
     name: "Angel One DVC Campaign",
     image: AngelOne,
     category: "film",
     link: "https://www.instagram.com/p/DHX0wDgh-AP/?igsh=d2p0Nm0zYm1jNnV0",
   },
+  {
+    name: "Kognivera Official Anthem Video",
+    image: Kognivera,
+    category: "film",
+    link: "https://www.instagram.com/reels/DUQiW4aigtN/",
+  },
+  {
+    image: IndiaToday,
+    name: "India Today: SKY Interview",
+    link: "https://www.youtube.com/watch?v=LnLJ1V0nREA",
+    category: "film",
+  },
+  {
+    image: AdobeSummit,
+    name: "Adobe Summit",
+    link: "https://www.youtube.com/watch?v=Bv1UyJtquaQ",
+    category: "film",
+  },
+  {
+    image: FrenchEmbassy,
+    name: "French Embassy",
+    link: "https://www.youtube.com/watch?v=A7XG3Iu9cbo",
+    category: "film",
+  },
+
+  {
+    image: PearlAcademy,
+    name: "Pearl Academy",
+    link: "https://www.youtube.com/watch?v=qJSCuEbnF9U",
+    category: "film",
+  },
+
+  {
+    image: SaraAliKhan,
+    name: "Sara Ali Khan Interview",
+    link: "https://www.youtube.com/watch?v=0AFNhKNR__U",
+    category: "film",
+  },
+  
+
   {
     image: TumHoToh,
     name: "Tum Ho Toh Music Video",
@@ -359,6 +506,36 @@ const projects = [
     name: "Phir Se Milo Music Video",
     link: "https://www.youtube.com/watch?v=UH3k66tGqSE",
     category: "film",
+  },
+  {
+    image: WCGMortal,
+    name: "WCG Mortal vs Scoutop",
+    link: "https://www.youtube.com/watch?v=nZc8skcHLJ4",
+    category: "film",
+  },
+  {
+    image: Brut,
+    name: "Brut",
+    link: "",
+    category: "film",
+    links: [
+      {
+        label: "Brut: McDonalds",
+        url: "https://www.youtube.com/watch?v=OY5vJBVxIOk",
+      },
+      {
+        label: "Brut: Myntra",
+        url: "https://www.youtube.com/watch?v=u8OnrcGI-Uo",
+      },
+      {
+        label: "Brut Sauce: Karishma Tanna",
+        url: "https://www.youtube.com/watch?v=Kw6iNpNnx7U",
+      },
+      {
+        label: "Brut: Kareena Kapoor",
+        url: "https://www.youtube.com/watch?v=KVOyMXdv8_E",
+      },
+    ]
   },
   {
     image: Deesan,
@@ -386,24 +563,14 @@ const projects = [
     link: "https://www.youtube.com/watch?v=fOJZgFkvl0s&feature=youtu.be",
   },
 
-  {
-    image: BonkersCorner1,
-    name: "Bonkers Corner Fashion Film",
-    category: "film",
-    link: "https://www.instagram.com/p/DCCIHyjT3II/?igsh=aGdzMWx3cGcwMDJv",
-  },
-  {
-    image: BrutSauce,
-    name: "Mcdonalds Corporate Film",
-    category: "film",
-    link: "https://www.youtube.com/watch?v=OY5vJBVxIOk",
-  },
-  {
-    image: Lashika,
-    name: "Lashika",
-    category: "film",
-    link: "https://drive.google.com/file/d/1zupff8boABBtJzIP6rqQMuVJURR41_pi/view?usp=drive_link",
-  },
+  
+  
+  // {
+  //   image: Lashika,
+  //   name: "Lashika",
+  //   category: "film",
+  //   link: "https://drive.google.com/file/d/1zupff8boABBtJzIP6rqQMuVJURR41_pi/view?usp=drive_link",
+  // },
 ];
 
 function Work() {

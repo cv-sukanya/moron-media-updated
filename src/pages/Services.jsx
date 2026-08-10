@@ -26,7 +26,7 @@ const serviceData = [
       "Live Show Highlights",
       "Artist Performance Content",
       "Sponsor Deliverables (Reels + Brand integrations)",
-      "Event Recaps &amp; Social-First Edits",
+      "Event Recaps & Social-First Edits",
       "Live Event Content Strategy",
     ],
   },
