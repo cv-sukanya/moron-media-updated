@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -165,7 +165,7 @@ function WorkSlider() {
 
   
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   return (
     <div className="p-8 relative pb-24">

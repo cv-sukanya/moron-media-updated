@@ -369,6 +369,16 @@ const projects = [
     image: "https://res.cloudinary.com/dgrqhkw0w/image/upload/v1794566749/Asian_Paints_India_Design_Mumbai_Billboard_cds1kx.webp",
     category: "live",
     link: "",
+    links: [
+      {
+        label: "India Design Mumbai 2026",
+        url: "https://www.instagram.com/reels/DePidMCoGWk/"
+      },
+      {
+        label: "Day 2 - India Design Mumbai 2026",
+        url: "https://www.instagram.com/reels/DeUzh9wT-6d/"
+      }
+    ]
   },
   // {
   //   name: "Assam G20",
