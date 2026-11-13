@@ -1,6 +1,6 @@
 import React from "react";
 import WorkCard from "../components/WorkCard";
-import { label } from "three/tsl";
+// import { label } from "three/tsl";
 
 const projects = [
   {
