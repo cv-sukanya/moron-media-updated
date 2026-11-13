@@ -12,10 +12,7 @@ function Navbar() {
 
   useEffect(() => {
     const handleOutsideClick = (e) => {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(e.target)
-      ) {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
         // setShowServicesDropdown(false);
       }
     };
@@ -24,7 +21,11 @@ function Navbar() {
   }, []);
 
   const [showDeckModal, setShowDeckModal] = useState(false);
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
   const [formStatus, setFormStatus] = useState(null);
 
   const handleChange = (e) => {
@@ -48,7 +49,6 @@ function Navbar() {
     }
   };
 
-
   return (
     <div className="font-menda bg-black z-50 fixed w-full text-white border-b-2 border-white">
       <nav className="flex items-center justify-between w-[95%] mx-auto p-4">
@@ -60,17 +60,29 @@ function Navbar() {
         {/* Desktop Menu Center */}
         <ul className="hidden lg:flex gap-10 text-lg font-helvetica font-medium">
           <li>
-            <NavLink to="/" onClick={closeMenu} className="flex items-center gap-1 hover:font-bold">
-            Home
+            <NavLink
+              to="/"
+              onClick={closeMenu}
+              className="flex items-center gap-1 hover:font-bold"
+            >
+              Home
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about" onClick={closeMenu} className="flex items-center gap-1 hover:font-bold">
+            <NavLink
+              to="/about"
+              onClick={closeMenu}
+              className="flex items-center gap-1 hover:font-bold"
+            >
               About Us
             </NavLink>
           </li>
           <li>
-            <NavLink to="/Services" onClick={closeMenu} className="flex items-center gap-1 hover:font-bold">
+            <NavLink
+              to="/Services"
+              onClick={closeMenu}
+              className="flex items-center gap-1 hover:font-bold"
+            >
               Services
             </NavLink>
           </li>
@@ -119,8 +131,25 @@ function Navbar() {
           </li> */}
 
           <li>
-            <NavLink to="/work" onClick={closeMenu} className="flex items-center gap-1 hover:font-bold">
+            {/* <NavLink to="/work" onClick={closeMenu} className="flex items-center gap-1 hover:font-bold">
               Work
+            </NavLink> */}
+
+            <NavLink
+              to="/MoronMediaFilm"
+              onClick={closeMenu}
+              className="flex items-center gap-1 hover:font-bold"
+            >
+              MM Film
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/MoronMediaLive"
+              onClick={closeMenu}
+              className="flex items-center gap-1 hover:font-bold"
+            >
+              MM Live
             </NavLink>
           </li>
           {/* <li>
@@ -134,7 +163,10 @@ function Navbar() {
               onClick={(e) => {
                 e.preventDefault();
                 closeMenu();
-                window.scrollTo({ top: document.documentElement.scrollHeight, behavior: "smooth" });
+                window.scrollTo({
+                  top: document.documentElement.scrollHeight,
+                  behavior: "smooth",
+                });
               }}
               className="flex items-center gap-1 hover:font-bold"
             >
@@ -150,13 +182,15 @@ function Navbar() {
           Request a Deck
         </button> */}
 
-
         {/* Schedule a Call button */}
-        {/* <div className="hidden lg:block">
-          <NavLink to="https://docs.google.com/forms/d/e/1FAIpQLSfhTBetZWrA6G-97ihqoc_XsgdGwr2gHHmZwg9feB0CSySRCA/viewform?usp=sharing&ouid=102780773921089345298" className="px-4 py-2 border-2 border-white rounded-full hover:bg-white hover:text-black transition-all">
+        <div className="hidden lg:block">
+          <NavLink
+            to="https://docs.google.com/forms/d/e/1FAIpQLSfhTBetZWrA6G-97ihqoc_XsgdGwr2gHHmZwg9feB0CSySRCA/viewform?usp=sharing&ouid=102780773921089345298"
+            className="px-4 py-2 border-2 border-white rounded-full hover:bg-white hover:text-black transition-all"
+          >
             Schedule a Call
           </NavLink>
-        </div> */}
+        </div>
 
         {/* Mobile Menu Toggle */}
         <div className="lg:hidden">
@@ -215,17 +249,22 @@ function Navbar() {
             </form>
           </div>
         </div>
-)}
-
+      )}
 
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="lg:hidden bg-black text-white px-6 py-6 space-y-4 border-t border-white text-base font-helvetica font-medium">
-            <NavLink to="/" onClick={closeMenu} className="block">Home</NavLink>
-            <NavLink to="/about" onClick={closeMenu} className="block">About Us</NavLink>
-            <NavLink to="/services" onClick={closeMenu} className="block">Services</NavLink>
-            {/* Mobile Services Dropdown */}
-            {/* <div>
+          <NavLink to="/" onClick={closeMenu} className="block">
+            Home
+          </NavLink>
+          <NavLink to="/about" onClick={closeMenu} className="block">
+            About Us
+          </NavLink>
+          <NavLink to="/services" onClick={closeMenu} className="block">
+            Services
+          </NavLink>
+          {/* Mobile Services Dropdown */}
+          {/* <div>
                 <button
                     onClick={() => setShowServicesDropdown(!showServicesDropdown)}
                     className="w-full text-left"
@@ -243,20 +282,32 @@ function Navbar() {
                 )}
             </div> */}
 
-            <NavLink to="/work" onClick={closeMenu} className="block">Work</NavLink>
-            {/* <NavLink to="/artists" onClick={closeMenu} className="block">Artists</NavLink> */}
-            <a
+          {/* <NavLink to="/work" onClick={closeMenu} className="block">Work</NavLink> */}
+          {/* <NavLink to="/artists" onClick={closeMenu} className="block">Artists</NavLink> */}
+
+          <NavLink to="/MoronMediaFilm" onClick={closeMenu} className="block">
+            MM Film
+          </NavLink>
+
+          <NavLink to="/MoronMediaLive" onClick={closeMenu} className="block">
+            MM Live
+          </NavLink>
+
+          <a
             href="#footer"
             onClick={(e) => {
-                e.preventDefault();
-                closeMenu();
-                window.scrollTo({ top: document.documentElement.scrollHeight, behavior: "smooth" });
+              e.preventDefault();
+              closeMenu();
+              window.scrollTo({
+                top: document.documentElement.scrollHeight,
+                behavior: "smooth",
+              });
             }}
             className="block"
-            >
+          >
             Contact
-            </a>
-            {/* <button
+          </a>
+          {/* <button
               onClick={() => {
                 setShowDeckModal(true);
                 closeMenu();
@@ -266,17 +317,16 @@ function Navbar() {
               Request a Deck
             </button> */}
 
-            <NavLink
-              to="https://docs.google.com/forms/d/e/1FAIpQLSfhTBetZWrA6G-97ihqoc_XsgdGwr2gHHmZwg9feB0CSySRCA/viewform?usp=sharing&ouid=102780773921089345298/schedule"
-              className="block mt-4 px-4 py-2 border border-white rounded-full text-center hover:bg-white hover:text-black"
-            >
-              Schedule a Call
-            </NavLink>
+          <NavLink
+            to="https://docs.google.com/forms/d/e/1FAIpQLSfhTBetZWrA6G-97ihqoc_XsgdGwr2gHHmZwg9feB0CSySRCA/viewform?usp=sharing&ouid=102780773921089345298/schedule"
+            className="block mt-4 px-4 py-2 border border-white rounded-full text-center hover:bg-white hover:text-black"
+          >
+            Schedule a Call
+          </NavLink>
 
-            {/* https://docs.google.com/forms/d/e/1FAIpQLSfhTBetZWrA6G-97ihqoc_XsgdGwr2gHHmZwg9feB0CSySRCA/viewform?usp=sharing&ouid=102780773921089345298 */}
+          {/* https://docs.google.com/forms/d/e/1FAIpQLSfhTBetZWrA6G-97ihqoc_XsgdGwr2gHHmZwg9feB0CSySRCA/viewform?usp=sharing&ouid=102780773921089345298 */}
         </div>
-        )}
-
+      )}
     </div>
   );
 }

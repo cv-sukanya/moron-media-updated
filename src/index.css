@@ -64,3 +64,225 @@ html, body {
 .animate-fade-up {
   animation: fade-up 0.8s ease-out forwards;
 }
+
+
+
+/* =========================================
+   SERVICE OVERVIEW SECTION
+========================================= */
+
+.service-overview {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.17);
+  background: #000;
+}
+
+.service-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.service-overview-card {
+  position: relative;
+  min-height: 300px;
+  padding: 35px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  /* border-left: 2px solid rgba(255, 255, 255, 0.17);
+  border-right: 1px solid rgba(255, 255, 255, 0.17);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.17); */
+  border: 1px solid rgba(255, 255, 255, 0.17);
+  background: #000;
+  transition: background 0.4s ease;
+}
+
+/* Remove border from last column */
+.service-overview-card:nth-child(3n) {
+  border-right: none;
+}
+
+/* Remove bottom border from last row */
+.service-overview-card:nth-last-child(-n + 3) {
+  border-bottom: none;
+}
+
+/* Icon */
+.service-overview-icon {
+  width: 150px;
+  height: 150px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  isolation: isolate;
+  margin-bottom: 20px;
+}
+
+.service-overview-icon::before {
+  content: "";
+  position: absolute;
+  inset: -25px;
+
+  background: radial-gradient(
+    circle,
+    rgba(255, 104, 34, 0.35) 0%,
+    rgba(255, 144, 28, 0.15) 35%,
+    transparent 70%
+  );
+
+  filter: blur(25px);
+  z-index: -1;
+
+  transition: opacity 0.4s ease;
+}
+
+.service-overview-icon svg {
+  width: 115px;
+  height: 115px;
+
+  filter: drop-shadow(0 0 15px rgba(255, 107, 35, 0.35));
+
+  transition:
+    transform 0.5s ease,
+    filter 0.5s ease;
+}
+
+/* Hover Effect */
+.service-overview-card:hover {
+  background: #080604;
+}
+
+.service-overview-card:hover .service-overview-icon svg {
+  transform: translateY(-5px) scale(1.06);
+
+  filter: drop-shadow(0 0 25px rgba(255, 107, 35, 0.55));
+}
+
+.service-overview-card:hover .service-overview-icon::before {
+  opacity: 1;
+}
+
+/* Content */
+.service-overview-content {
+  margin-top: auto;
+}
+
+.service-overview-content h3 {
+  color: #f8ead7;
+
+  /* font-family: "Helvetica", sans-serif; */
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+
+  margin: 0 0 8px;
+}
+
+.service-overview-content p {
+  color: #858585;
+
+  /* font-family: "Helvetica", sans-serif; */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  margin: 0;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1024px) {
+  .service-overview {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .service-overview-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .service-overview-card {
+    min-height: 280px;
+    padding: 30px 25px;
+  }
+
+  .service-overview-card:nth-child(3n) {
+    border-right: 1px solid rgba(255, 255, 255, 0.17);
+  }
+
+  .service-overview-card:nth-child(2n) {
+    border-right: none;
+  }
+
+  .service-overview-card:nth-last-child(-n + 3) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.17);
+  }
+
+  .service-overview-card:nth-last-child(-n + 2) {
+    border-bottom: none;
+  }
+
+  .service-overview-content h3 {
+    font-size: 26px;
+  }
+
+  .service-overview-content p {
+    font-size: 16px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 640px) {
+  .service-overview {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .service-overview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-overview-card {
+    min-height: 250px;
+    padding: 25px 22px;
+
+    border-right: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.17) !important;
+  }
+
+  .service-overview-card:last-child {
+    border-bottom: none !important;
+  }
+
+  .service-overview-icon {
+    width: 115px;
+    height: 115px;
+    margin-bottom: 15px;
+  }
+
+  .service-overview-icon svg {
+    width: 95px;
+    height: 95px;
+  }
+
+  .service-overview-content h3 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .service-overview-content p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+}

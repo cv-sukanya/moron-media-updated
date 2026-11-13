@@ -6,12 +6,13 @@ import gsap from "gsap";
 
 
 // Image imports
-import Artist1 from "../assets/images/artist.webp";
+// import Artist1 from "../assets/images/artist.webp";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-const bannerImage = [Artist1];
+// const bannerImage = [Artist1];
+const bannerImage = ["https://res.cloudinary.com/dgrqhkw0w/image/upload/v1794555313/artist_cdm5vd.png"];
 
 function ArtistCollage() {
   const count1 = useRef();

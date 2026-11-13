@@ -18,10 +18,10 @@ const BrandName = () => {
             x2="100%"
             y2="0%"
           >
-            <stop offset="0%" stopColor="#8e2b10" />
-            <stop offset="30%" stopColor="#e55428" />
-            <stop offset="60%" stopColor="#e55428" />
-            <stop offset="100%" stopColor="#8e2b10" />
+            <stop offset="0%" stopColor="#c2530e" />
+            <stop offset="30%" stopColor="#DB6923" />
+            <stop offset="60%" stopColor="#DB6923" />
+            <stop offset="100%" stopColor="#c2530e" />
           </linearGradient>
 
           {/* Tagline gradient */}
@@ -64,7 +64,8 @@ const BrandName = () => {
           fill="url(#tagline-gradient)"
           className="tagline-text"
         >
-          A Creative Production House
+          {/* A Creative Production House */}
+          Morons Minting Media
         </text>
       </svg>
     </section>
